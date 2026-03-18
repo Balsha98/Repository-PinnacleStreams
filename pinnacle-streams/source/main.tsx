@@ -4,7 +4,9 @@ import { createRoot } from "react-dom/client";
 // IMPORTED CUSTOM MODULES
 import App from "./App.tsx";
 
-createRoot(document.getElementById("root")!).render(
+const root: HTMLElement = document.getElementById("root")!;
+
+createRoot(root).render(
 	<StrictMode>
 		<App />
 	</StrictMode>,
