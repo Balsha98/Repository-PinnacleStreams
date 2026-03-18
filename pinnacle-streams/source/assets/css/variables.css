@@ -1,0 +1,39 @@
+:root {
+    /* FONTS */
+    --font-heading: 'Urbanist', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    /* BRAND BLUE */
+    --brand-blue-core: #0064FF;
+    --brand-blue-hover: #0050CC;
+    --brand-blue-dark: #003A99;
+
+    /* BRAND NAVY */
+    --brand-navy-core: #060E2B;
+    --brand-navy-hover: #0B1638;
+    --brand-navy-dark: #04091E;
+
+    /* ACCENTS */
+    --accent-red-core: #DC1E1E;
+    --accent-gold-core: #F5C518;
+    --accent-green-core: #00C896;
+    --accent-green-dark: #003322;
+
+    /* HOVER */
+    --hover-white-light: rgba(255, 255, 255, 0.08);
+    --hover-white-medium: rgba(255, 255, 255, 0.16);
+    --hover-white-dark: rgba(255, 255, 255, 0.24);
+
+    /* CONTAINER */
+    --container-primary: #FFFFFF;
+    --container-secondary: #A8B4D0;
+    --container-muted: #5C6E99;
+    --container-blue-tint: #6BAAFF;
+
+
+    /* TEXT */
+    --text-primary: #FFFFFF;
+    --text-secondary: #A8B4D0;
+    --text-muted: #5C6E99;
+    --text-blue-tint: #6BAAFF;
+}
