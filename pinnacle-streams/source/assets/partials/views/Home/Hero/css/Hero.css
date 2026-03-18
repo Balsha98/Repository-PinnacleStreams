@@ -1,0 +1,106 @@
+/* HOME VIEW HERO CONTAINER */
+.div-home-view-hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 6.4rem 0;
+}
+
+/* HEADER HOME VIEW HERO CONTAINER */
+.header-home-view-hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* HEADER HOME VIEW HERO ICON CONTAINER */
+.div-header-home-view-hero-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: fit-content;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--opaque-blue-light);
+    border-radius: 0.6rem;
+}
+
+.div-header-home-view-hero-icon-container svg {
+    stroke: var(--text-blue-tint);
+}
+
+.div-header-home-view-hero-icon-container span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--text-blue-tint);
+}
+
+/* HEADER HOME VIEW HERO INFO CONTAINER */
+.div-header-home-view-hero-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-header-home-view-hero-info-container h2 {
+    font-size: 6.4rem;
+}
+
+.div-header-home-view-hero-info-container span {
+    display: inline-block;
+    margin-top: -1.6rem;
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--brand-blue-core);
+}
+
+/* HOME VIEW HERO CONTENT CONTAINER */
+.div-home-view-hero-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* HOME VIEW HERO CONTENT INFO LIST */
+.home-view-hero-content-info-list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+/* HOME VIEW HERO CONTENT INFO LIST ITEM */
+.home-view-hero-content-info-list-item {
+    position: relative;
+}
+
+.home-view-hero-content-info-list-item:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.home-view-hero-content-info-list-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1.6rem;
+    width: 0.2rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--container-secondary);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-view-hero-content-info-list-item:first-child svg {
+    fill: var(--accent-gold-core);
+    stroke: var(--accent-gold-core);
+}
+
+.home-view-hero-content-info-list-item span {
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+}
+
+/* HOME VIEW HERO CONTENT ACTIONS CONTAINER */
+.div-home-view-hero-content-actions-container {
+}
