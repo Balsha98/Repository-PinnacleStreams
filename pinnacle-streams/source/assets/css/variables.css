@@ -40,4 +40,7 @@
     --opaque-blue-light: rgba(107, 170, 255, 0.08);
     --opaque-blue-medium: rgba(107, 170, 255, 0.16);
     --opaque-blue-dark: rgba(107, 170, 255, 0.24);
+    --opaque-white-light: rgba(255, 255, 255, 0.08);
+    --opaque-white-medium: rgba(255, 255, 255, 0.16);
+    --opaque-white-dark: rgba(255, 255, 255, 0.24);
 }
