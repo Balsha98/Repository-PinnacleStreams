@@ -1,0 +1,12 @@
+/* MAIN LOGO CONTAINER */
+.div-main-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.div-main-logo-container h2 {
+    font-size: 2.4rem;
+    font-family: var(--font-heading);
+    letter-spacing: 2.4px;
+}
