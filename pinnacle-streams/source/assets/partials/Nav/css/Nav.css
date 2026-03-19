@@ -1,10 +1,13 @@
 /* MAIN NAV CONTAINER */
 .div-main-nav-container {
+    padding: 2.4rem 0;
+    background-color: transparent;
+}
+
+.div-main-nav-container .div-main-edge-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.4rem 4.8rem;
-    background-color: transparent;
 }
 
 /* MAIN NAV LOGO CONTAINER */
