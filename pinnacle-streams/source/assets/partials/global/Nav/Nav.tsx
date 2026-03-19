@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // IMPORTED STYLESHEETS
 import "./css/Nav.css";
 // IMPORTED CUSTOM MODULES
-import LogoPartial from "../global/Logo/Logo";
+import LogoPartial from "../Logo/Logo";
 
 const Nav = function () {
     return (

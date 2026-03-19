@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Footer.css";
 // IMPORTED CUSTOM COMPONENTS
-import LogoPartial from "../global/Logo/Logo";
+import LogoPartial from "../Logo/Logo";
 
 const Footer = function () {
     return (

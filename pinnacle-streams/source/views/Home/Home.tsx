@@ -1,9 +1,9 @@
 // IMPORTED CORE COMPONENTS
 import { useEffect } from "react";
 // IMPORTED CUSTOM COMPONENTS
-import NavPartial from "../../assets/partials/Nav/Nav";
+import NavPartial from "../../assets/partials/global/Nav/Nav";
 import HeroPartial from "../../assets/partials/views/Home/Hero/Hero";
-import FooterPartial from "../../assets/partials/Footer/Footer";
+import FooterPartial from "../../assets/partials/global/Footer/Footer";
 
 const Home = function () {
     useEffect(() => {

@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 9.6rem;
     padding: 6.4rem 0 3.2rem;
+    border-top: 0.12rem solid var(--opaque-blue-medium);
 }
 
 /* MAIN FOOTER CONTENT CONTAINER */
