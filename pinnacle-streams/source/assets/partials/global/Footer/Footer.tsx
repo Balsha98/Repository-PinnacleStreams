@@ -3,7 +3,7 @@ import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Footer.css";
 // IMPORTED CUSTOM COMPONENTS
-import LogoPartial from "../Logo/Logo";
+import Logo from "../Logo/Logo";
 
 const Footer = function () {
     return (
@@ -11,7 +11,7 @@ const Footer = function () {
             <div className="div-main-footer-content-container">
                 <div className="div-main-footer-info-overview-container">
                     <div className="div-main-footer-info-container">
-                        <LogoPartial />
+                        <Logo />
                         <p>The premium streaming home for hit shows, blockbuster movies, live sports, and exclusive Pinnacle Originals. Stream on demand or watch live - always on your terms.</p>
                     </div>
                     <ul className="main-footer-info-overview-socials-list">
