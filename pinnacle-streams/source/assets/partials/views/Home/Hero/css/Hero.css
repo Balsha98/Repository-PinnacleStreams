@@ -115,8 +115,8 @@
 }
 
 .home-view-hero-content-info-list-item:first-child svg {
-    fill: var(--accent-gold-core);
-    stroke: var(--accent-gold-core);
+    fill: var(--accent-yellow-core);
+    stroke: var(--accent-yellow-core);
 }
 
 .home-view-hero-content-info-list-item span {
@@ -125,7 +125,7 @@
 }
 
 .home-view-hero-content-info-list-item:first-child span {
-    color: var(--accent-gold-core);
+    color: var(--accent-yellow-core);
 }
 
 .div-home-view-hero-content-info-container > p {
