@@ -84,5 +84,6 @@
 
 .div-section-features-container-list-item-info-container p {
     font-size: 1.4rem;
+    line-height: 1.6;
     color: var(--text-secondary);
 }
