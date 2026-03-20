@@ -41,20 +41,20 @@
     flex-direction: column;
     gap: 3.2rem;
     padding: 3.2rem;
-    background-color: var(--opaque-blue-light);
+    background-color: var(--brand-navy-hover);
     border-radius: 1.2rem;
     transition: all 0.2s ease-in-out;
 }
 
 .section-plans-cards-list-item:hover {
-    box-shadow: 0 0.4rem 1.6rem var(--opaque-blue-light);
+    box-shadow: 0 0.4rem 1.6rem var(--brand-navy-hover);
     transform: translateY(-0.8rem);
 }
 
 .popular.section-plans-cards-list-item {
     position: relative;
     box-shadow:
-        0 0.4rem 2.4rem var(--opaque-blue-light),
+        0 0.4rem 2.4rem var(--brand-navy-hover),
         inset 0 0 0 0.2rem var(--brand-blue-core);
 }
 
@@ -75,7 +75,7 @@
 
 .popular.section-plans-cards-list-item:hover {
     box-shadow:
-        0 0.4rem 2.4rem var(--opaque-blue-light),
+        0 0.4rem 2.4rem var(--brand-navy-hover),
         inset 0 0 0 0.2rem var(--brand-blue-core);
 }
 

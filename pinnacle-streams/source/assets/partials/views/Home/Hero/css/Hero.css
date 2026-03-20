@@ -84,25 +84,25 @@
     gap: 1.6rem;
 }
 
-/* HOME VIEW HERO CONTENT INFO LIST */
-.home-view-hero-content-info-list {
+/* HOME VIEW HERO CONTENT DETAILS LIST */
+.home-view-hero-content-details-list {
     display: flex;
     align-items: center;
     gap: 3.2rem;
 }
 
-/* HOME VIEW HERO CONTENT INFO LIST ITEM */
-.home-view-hero-content-info-list-item {
+/* HOME VIEW HERO CONTENT DETAILS LIST ITEM */
+.home-view-hero-content-details-list-item {
     position: relative;
 }
 
-.home-view-hero-content-info-list-item:first-child {
+.home-view-hero-content-details-list-item:first-child {
     display: flex;
     align-items: center;
     gap: 0.6rem;
 }
 
-.home-view-hero-content-info-list-item:not(:first-child)::before {
+.home-view-hero-content-details-list-item:not(:first-child)::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -114,17 +114,17 @@
     transform: translate(-50%, -50%);
 }
 
-.home-view-hero-content-info-list-item:first-child svg {
+.home-view-hero-content-details-list-item:first-child svg {
     fill: var(--accent-yellow-core);
     stroke: var(--accent-yellow-core);
 }
 
-.home-view-hero-content-info-list-item span {
+.home-view-hero-content-details-list-item span {
     font-size: 1.4rem;
     color: var(--text-secondary);
 }
 
-.home-view-hero-content-info-list-item:first-child span {
+.home-view-hero-content-details-list-item:first-child span {
     color: var(--accent-yellow-core);
 }
 
