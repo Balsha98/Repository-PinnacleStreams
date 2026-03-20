@@ -26,7 +26,7 @@ body::after {
     background-color: var(--brand-blue-core);
     filter: blur(2.4rem);
     border-radius: 50%;
-    opacity: 0.08;
+    opacity: 0.04;
     z-index: -1;
 }
 
