@@ -43,17 +43,18 @@
     padding: 3.2rem;
     background-color: var(--opaque-blue-light);
     border-radius: 1.2rem;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .section-plans-cards-list-item:hover {
+    box-shadow: 0 0.4rem 1.6rem var(--opaque-blue-light);
     transform: translateY(-0.8rem);
 }
 
 .popular.section-plans-cards-list-item {
     position: relative;
     box-shadow:
-        0 0 2.4rem var(--opaque-blue-dark),
+        0 0.4rem 2.4rem var(--opaque-blue-light),
         inset 0 0 0 0.2rem var(--brand-blue-core);
 }
 
@@ -70,6 +71,12 @@
     background-color: var(--brand-blue-core);
     border-radius: 2.4rem;
     transform: translate(-50%, -50%);
+}
+
+.popular.section-plans-cards-list-item:hover {
+    box-shadow:
+        0 0.4rem 2.4rem var(--opaque-blue-light),
+        inset 0 0 0 0.2rem var(--brand-blue-core);
 }
 
 /* HEADER SECTIONS PLANS CARDS LIST ITEM */
