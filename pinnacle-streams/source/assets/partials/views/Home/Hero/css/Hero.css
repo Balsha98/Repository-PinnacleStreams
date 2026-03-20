@@ -128,7 +128,7 @@
     color: var(--accent-gold-core);
 }
 
-.div-home-view-hero-content-info-container>p {
+.div-home-view-hero-content-info-container > p {
     width: 56rem;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -159,7 +159,7 @@
 
 .div-home-view-hero-content-actions-container a:first-child:hover,
 .div-home-view-hero-content-actions-container a:first-child:active {
-    box-shadow: 0 0.4rem 2.4rem var(--brand-blue-core);
+    box-shadow: 0 0.4rem 2.4rem var(--opaque-blue-dark);
     transform: translateY(-0.4rem);
 }
 
