@@ -1,9 +1,10 @@
 // IMPORTED CORE COMPONENTS
 import { useEffect } from "react";
 // IMPORTED CUSTOM COMPONENTS
-import NavPartial from "../../assets/partials/global/Nav/Nav";
-import HeroPartial from "../../assets/partials/views/Home/Hero/Hero";
-import FooterPartial from "../../assets/partials/global/Footer/Footer";
+import Nav from "../../assets/partials/global/Nav/Nav";
+import Hero from "../../assets/partials/views/Home/Hero/Hero";
+import Plans from "../../assets/partials/views/Home/Plans/Plans";
+import Footer from "../../assets/partials/global/Footer/Footer";
 
 const Home = function () {
     useEffect(() => {
@@ -12,10 +13,11 @@ const Home = function () {
 
     return (
         <>
-            <NavPartial />
+            <Nav />
             <div className="div-main-edge-container">
-                <HeroPartial />
-                <FooterPartial />
+                <Hero />
+                <Plans />
+                <Footer />
             </div>
         </>
     );
