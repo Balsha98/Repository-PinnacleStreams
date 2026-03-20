@@ -1,0 +1,171 @@
+/* SECTION PLANS CONTAINER */
+.section-plans-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 8rem 0;
+}
+
+/* HEADER SECTION PLANS CONTAINER */
+.header-section-plans-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.header-section-plans-container h2 {
+    font-size: 4rem;
+}
+
+.header-section-plans-container h2 span {
+    color: var(--brand-blue-core);
+}
+
+.header-section-plans-container p {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+}
+
+/* SECTIONS PLANS CARDS LIST */
+.section-plans-cards-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 4.8rem;
+}
+
+/* SECTIONS PLANS CARDS LIST ITEM */
+.section-plans-cards-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3.2rem;
+    background-color: var(--opaque-blue-light);
+    border-radius: 1.2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.section-plans-cards-list-item:hover {
+    transform: translateY(-0.8rem);
+}
+
+.popular.section-plans-cards-list-item {
+    position: relative;
+    box-shadow:
+        0 0 2.4rem var(--opaque-blue-dark),
+        inset 0 0 0 0.2rem var(--brand-blue-core);
+}
+
+.popular.section-plans-cards-list-item::before {
+    content: "Most Popular";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    background-color: var(--brand-blue-core);
+    border-radius: 2.4rem;
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER SECTIONS PLANS CARDS LIST ITEM */
+.header-section-plans-cards-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.header-section-plans-cards-list-item > span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--brand-blue-core);
+}
+
+/* HEADER SECTIONS PLANS CARDS LIST ITEM INFO CONTAINER */
+.div-header-section-plans-cards-list-item-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.div-header-section-plans-cards-list-item-info-container h4 {
+    font-size: 4.8rem;
+}
+
+.div-header-section-plans-cards-list-item-info-container h4 sup {
+    vertical-align: top;
+    font-size: 2rem;
+}
+
+.div-header-section-plans-cards-list-item-info-container span {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+/* SECTIONS PLANS CARDS LIST ITEM DETAILS LIST */
+.section-plans-cards-list-item-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/* SECTIONS PLANS CARDS LIST ITEM DETAILS LIST ITEM */
+.section-plans-cards-list-item-details-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.includes.section-plans-cards-list-item-details-list-item svg {
+    stroke: var(--accent-green-core);
+}
+
+.excludes.section-plans-cards-list-item-details-list-item svg {
+    stroke: var(--text-muted);
+}
+
+.section-plans-cards-list-item-details-list-item span {
+    font-size: 1.4rem;
+}
+
+.includes.section-plans-cards-list-item-details-list-item span {
+    color: var(--text-secondary);
+}
+
+.excludes.section-plans-cards-list-item-details-list-item span {
+    color: var(--text-muted);
+}
+
+.section-plans-cards-list-item a:link,
+.section-plans-cards-list-item a:visited {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: inset 0 0 0 0.12rem var(--opaque-blue-light);
+    border-radius: 0.8rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.section-plans-cards-list-item a:hover,
+.section-plans-cards-list-item a:active {
+    background-color: var(--hover-white-light);
+}
+
+.popular.section-plans-cards-list-item a:link,
+.popular.section-plans-cards-list-item a:visited {
+    background-color: var(--brand-blue-core);
+}
+
+.popular.section-plans-cards-list-item a:hover,
+.popular.section-plans-cards-list-item a:active {
+    background-color: var(--brand-blue-hover);
+}
