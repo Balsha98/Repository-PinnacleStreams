@@ -6,42 +6,45 @@
     /* BRAND BLUE */
     --brand-blue-core: #0064ff;
     --brand-blue-hover: #0050cc;
-    --brand-blue-dark: #003a99;
+    --brand-blue-light: #003a99;
 
     /* BRAND NAVY */
     --brand-navy-core: #060e2b;
     --brand-navy-hover: #0b1638;
-    --brand-navy-dark: #04091e;
+    --brand-navy-light: #04091e;
 
     /* ACCENTS */
     --accent-red-core: #dc1e1e;
     --accent-yellow-core: #f5c518;
     --accent-green-core: #00c896;
-    --accent-green-dark: #003322;
+    --accent-green-light: #003322;
 
-    /* HOVER */
-    --hover-white-light: rgba(255, 255, 255, 0.08);
-    --hover-white-medium: rgba(255, 255, 255, 0.16);
-    --hover-white-dark: rgba(255, 255, 255, 0.24);
+    /* ALPHA */
+    --alpha-white-dark: rgba(255, 255, 255, 0.08);
+    --alpha-white-medium: rgba(255, 255, 255, 0.16);
+    --alpha-white-light: rgba(255, 255, 255, 0.24);
+    --alpha-blue-dark: rgba(107, 170, 255, 0.08);
+    --alpha-blue-medium: rgba(107, 170, 255, 0.16);
+    --alpha-blue-light: rgba(107, 170, 255, 0.24);
 
     /* CONTAINER */
+    --container-black: #222;
     --container-primary: #ffffff;
     --container-secondary: #a8b4d0;
-    --container-black: #222;
     --container-muted: #5c6e99;
     --container-blue-tint: #6baaff;
 
+    /* BORDER */
+    --border-black: #222;
+    --border-primary: #ffffff;
+    --border-secondary: #a8b4d0;
+    --border-muted: #5c6e99;
+    --border-blue-tint: #6baaff;
+
     /* TEXT */
+    --text-black: #222;
     --text-primary: #ffffff;
     --text-secondary: #a8b4d0;
     --text-muted: #5c6e99;
     --text-blue-tint: #6baaff;
-
-    /* OPAQUE */
-    --opaque-blue-light: rgba(107, 170, 255, 0.08);
-    --opaque-blue-medium: rgba(107, 170, 255, 0.16);
-    --opaque-blue-dark: rgba(107, 170, 255, 0.24);
-    --opaque-white-light: rgba(255, 255, 255, 0.08);
-    --opaque-white-medium: rgba(255, 255, 255, 0.16);
-    --opaque-white-dark: rgba(255, 255, 255, 0.24);
 }

@@ -157,14 +157,14 @@
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
-    box-shadow: inset 0 0 0 0.12rem var(--opaque-blue-light);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
     border-radius: 0.8rem;
     transition: background-color 0.2s ease-in-out;
 }
 
 .section-plans-cards-list-item a:hover,
 .section-plans-cards-list-item a:active {
-    background-color: var(--hover-white-light);
+    background-color: var(--alpha-white-dark);
 }
 
 .popular.section-plans-cards-list-item a:link,

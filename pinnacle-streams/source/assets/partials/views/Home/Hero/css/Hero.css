@@ -36,7 +36,7 @@
     gap: 0.8rem;
     width: fit-content;
     padding: 0.8rem 1.2rem;
-    background-color: var(--opaque-blue-medium);
+    background-color: var(--alpha-blue-medium);
     border-radius: 0.6rem;
 }
 
@@ -159,19 +159,19 @@
 
 .div-home-view-hero-content-actions-container a:first-child:hover,
 .div-home-view-hero-content-actions-container a:first-child:active {
-    box-shadow: 0 0.4rem 2.4rem var(--opaque-blue-dark);
+    box-shadow: 0 0.4rem 2.4rem var(--alpha-blue-light);
     transform: translateY(-0.4rem);
 }
 
 .div-home-view-hero-content-actions-container a:last-child:link,
 .div-home-view-hero-content-actions-container a:last-child:visited {
-    background-color: var(--opaque-white-light);
-    box-shadow: inset 0 0 0 0.12rem var(--opaque-white-medium);
+    background-color: var(--alpha-white-dark);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-white-medium);
 }
 
 .div-home-view-hero-content-actions-container a:last-child:hover,
 .div-home-view-hero-content-actions-container a:last-child:active {
-    background-color: var(--hover-white-medium);
+    background-color: var(--alpha-white-medium);
 }
 
 .div-home-view-hero-content-actions-container a:first-child:link svg,

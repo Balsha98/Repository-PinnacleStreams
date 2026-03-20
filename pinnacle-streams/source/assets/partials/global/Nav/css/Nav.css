@@ -31,7 +31,7 @@
 
 .main-nav-container-links-list-item:first-child a:hover,
 .main-nav-container-links-list-item:first-child a:active {
-    background-color: var(--hover-white-light);
+    background-color: var(--alpha-white-dark);
 }
 
 .main-nav-container-links-list-item:last-child a:link,
