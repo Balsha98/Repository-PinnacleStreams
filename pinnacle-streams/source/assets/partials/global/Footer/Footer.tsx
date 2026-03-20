@@ -102,7 +102,7 @@ const Footer = function () {
                 </div>
             </div>
             <div className="div-main-footer-copyright-container">
-                <p>@ {new Date().getFullYear()} Pinnacle Streams, Inc. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Pinnacle Streams, Inc. All rights reserved.</p>
                 <ul className="main-footer-copyright-links-list">
                     <li className="main-footer-copyright-links-list-item">
                         <a href="#">Privacy Policy</a>
