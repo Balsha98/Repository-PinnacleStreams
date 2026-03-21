@@ -1,0 +1,206 @@
+/* SECTION LIVE CONTAINER */
+.section-live-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 9.6rem 0;
+}
+
+/* HEADER SECTION LIVE CONTAINER */
+.header-section-live-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header-section-live-container h2 {
+    font-size: 3.2rem;
+}
+
+.header-section-live-container h2 span {
+    color: var(--brand-blue-core);
+}
+
+.header-section-live-container a:link,
+.header-section-live-container a:visited {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header-section-live-container a:link span,
+.header-section-live-container a:visited span {
+    font-size: 1.4rem;
+    color: var(--brand-blue-core);
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-section-live-container a:hover span,
+.header-section-live-container a:active span {
+    transform: translateX(-0.4rem);
+}
+
+.header-section-live-container a:link svg,
+.header-section-live-container a:visited svg {
+    stroke: var(--brand-blue-core);
+}
+
+/* SECTION LIVE CONTAINER LIST CONTAINER */
+.div-section-live-container-list-container {
+    position: relative;
+}
+
+.div-section-live-container-list-container > button {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: var(--brand-navy-core);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-medium);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.div-section-live-container-list-container > button:hover {
+    background-color: var(--brand-blue-core);
+}
+
+.div-section-live-container-list-container > button:first-child {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.div-section-live-container-list-container > button:last-child {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/* SECTION LIVE CONTAINER LIST */
+.section-live-container-list {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+/* SECTION LIVE CONTAINER LIST ITEM */
+.section-live-container-list-item {
+    width: 36rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* SECTION LIVE CONTAINER LIST ITEM THUMBNAIL CONTAINER */
+.div-section-live-container-list-item-thumbnail-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24rem;
+}
+
+/* SECTION LIVE CONTAINER LIST ITEM THUMBNAIL INDICATOR CONTAINER */
+.div-section-live-container-list-item-thumbnail-indicator-container {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    letter-spacing: 1.6px;
+    color: var(--text-secondary);
+    background-color: var(--accent-red-core);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
+    border-radius: 0.2rem;
+}
+
+.div-section-live-container-list-item-thumbnail-indicator-container span:first-child {
+    width: 0.6rem;
+    aspect-ratio: 1 / 1;
+    font-size: 0.2rem;
+    background-color: var(--container-primary);
+    border-radius: 50%;
+    animation: live 1.2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes live {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.div-section-live-container-list-item-thumbnail-indicator-container span:last-child {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* SECTION LIVE CONTAINER LIST ITEM THUMBNAIL */
+.div-section-live-container-list-item-thumbnail {
+    transition: transform 0.2s ease-in-out;
+}
+
+.section-live-container-list-item:hover .div-section-live-container-list-item-thumbnail {
+    transform: scale(1.1);
+}
+
+.div-section-live-container-list-item-thumbnail svg {
+    stroke: var(--text-muted);
+}
+
+/* SECTION LIVE CONTAINER LIST ITEM INFO CONTAINER */
+.div-section-live-container-list-item-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.6rem;
+    background-color: var(--brand-navy-hover);
+}
+
+/* HEDER SECTION LIVE CONTAINER LIST ITEM INFO CONTAINER */
+.header-section-live-container-list-item-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.header-section-live-container-list-item-info-container span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: var(--brand-blue-core);
+}
+
+.header-section-live-container-list-item-info-container h4 {
+    font-size: 1.4rem;
+}
+
+.div-section-live-container-list-item-info-container p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+/* SECTION LIVE CONTAINER LIST ITEM INFO PROGRESS TRACK CONTAINER */
+.div-section-live-container-list-item-info-progress-track-container {
+    height: 0.4rem;
+    margin-top: 0.4rem;
+    background-color: var(--alpha-blue-dark);
+    border-radius: 2.4rem;
+}
+
+.div-section-live-container-list-item-info-progress-thumb {
+    width: 80%;
+    height: 100%;
+    background-color: var(--brand-blue-core);
+    border-radius: 1.2rem;
+}
