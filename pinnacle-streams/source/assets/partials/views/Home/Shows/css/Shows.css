@@ -131,6 +131,7 @@
     border-radius: 50%;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .section-shows-container-list-item:hover .div-section-shows-container-list-item-thumbnail-container > button {
