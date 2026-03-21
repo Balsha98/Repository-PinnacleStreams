@@ -1,5 +1,5 @@
 // IMPORTED CORE MODULES
-import { ChevronLeft, ChevronRight, Clapperboard, Play } from "lucide-react";
+import { ChevronLeft, ChevronRight, Clapperboard } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Live.css";
 
