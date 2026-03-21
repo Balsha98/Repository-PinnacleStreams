@@ -3,6 +3,121 @@ import { ChevronLeft, ChevronRight, Clapperboard, Play } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Shows.css";
 
+const SHOWS: object[] = [
+    {
+        id: 1,
+        title: "Yellowstone",
+        details: ["2018", "TV-MA", "Drama", "5 Seasons"],
+        badges: ["HD"],
+        image: "",
+    },
+    {
+        id: 2,
+        title: "Tulsa King",
+        details: ["2022", "TV-MA", "Crime", "2 Seasons"],
+        badges: ["HD", "New"],
+        image: "",
+    },
+    {
+        id: 3,
+        title: "Star Trek: Strange New Worlds",
+        details: ["2022", "TV-14", "Sci-Fi", "3 Seasons"],
+        badges: ["4K", "New"],
+        image: "",
+    },
+    {
+        id: 4,
+        title: "The Good Fight",
+        details: ["2017", "TV-MA", "Legal Drama", "6 Seasons"],
+        badges: ["HD"],
+        image: "",
+    },
+    {
+        id: 5,
+        title: "Halo",
+        details: ["2022", "TV-MA", "Sci-Fi", "2 Seasons"],
+        badges: ["4K"],
+        image: "",
+    },
+    {
+        id: 6,
+        title: "Lioness",
+        details: ["2023", "TV-MA", "Action", "2 Seasons"],
+        badges: ["HD", "New"],
+        image: "",
+    },
+    {
+        id: 7,
+        title: "Mayor of Kingstown",
+        details: ["2021", "TV-MA", "Crime", "3 Seasons"],
+        badges: ["HD"],
+        image: "",
+    },
+    {
+        id: 8,
+        title: "Star Trek: Discovery",
+        details: ["2017", "TV-14", "Sci-Fi", "5 Seasons"],
+        badges: ["4K"],
+        image: "",
+    },
+    {
+        id: 9,
+        title: "1923",
+        details: ["2022", "TV-MA", "Drama", "2 Seasons"],
+        badges: ["HD", "Original"],
+        image: "",
+    },
+    {
+        id: 10,
+        title: "1883",
+        details: ["2021", "TV-MA", "Western", "1 Season"],
+        badges: ["HD", "Original"],
+        image: "",
+    },
+    {
+        id: 11,
+        title: "The Offer",
+        details: ["2022", "TV-MA", "Drama", "1 Season"],
+        badges: ["HD"],
+        image: "",
+    },
+    {
+        id: 12,
+        title: "Star Trek: Picard",
+        details: ["2020", "TV-14", "Sci-Fi", "3 Seasons"],
+        badges: ["4K"],
+        image: "",
+    },
+    {
+        id: 13,
+        title: "Evil",
+        details: ["2019", "TV-MA", "Supernatural", "4 Seasons"],
+        badges: ["HD"],
+        image: "",
+    },
+    {
+        id: 14,
+        title: "Seal Team",
+        details: ["2017", "TV-14", "Action", "7 Seasons"],
+        badges: ["HD"],
+        image: "",
+    },
+    {
+        id: 15,
+        title: "iCarly",
+        details: ["2021", "TV-14", "Comedy", "3 Seasons"],
+        badges: ["HD"],
+        image: "",
+    },
+    {
+        id: 16,
+        title: "Grease: Rise of the Pink Ladies",
+        details: ["2023", "TV-14", "Musical", "1 Season"],
+        badges: ["HD"],
+        image: "",
+    },
+];
+
 const Shows = function () {
     return (
         <section className="section-shows-container">
@@ -20,62 +135,41 @@ const Shows = function () {
                     <ChevronLeft size={16} />
                 </button>
                 <ul className="section-shows-container-list">
-                    <li className="section-shows-container-list-item">
-                        <div className="div-section-shows-container-list-item-thumbnail-container">
-                            <span>4K</span>
-                            <div className="div-section-shows-container-list-item-thumbnail">
-                                <Clapperboard size={32} />
-                            </div>
-                            <button>
-                                <Play size={14} />
-                            </button>
-                        </div>
-                        <div className="div-section-shows-container-list-item-info-container">
-                            <h4>Yellowstone</h4>
-                            <ul className="section-shows-container-list-item-info-container-details-list">
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>2018</span>
-                                </li>
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>TV-MA</span>
-                                </li>
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>Drama</span>
-                                </li>
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>5 Seasons</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li className="section-shows-container-list-item">
-                        <div className="div-section-shows-container-list-item-thumbnail-container">
-                            <span>4K</span>
-                            <div className="div-section-shows-container-list-item-thumbnail">
-                                <Clapperboard size={32} />
-                            </div>
-                            <button>
-                                <Play size={14} />
-                            </button>
-                        </div>
-                        <div className="div-section-shows-container-list-item-info-container">
-                            <h4>Tulsa King</h4>
-                            <ul className="section-shows-container-list-item-info-container-details-list">
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>2022</span>
-                                </li>
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>TV-MA</span>
-                                </li>
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>Crime</span>
-                                </li>
-                                <li className="section-shows-container-list-item-info-container-details-list-item">
-                                    <span>2 Seasons</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                    {SHOWS.map(({ id, title, details, badges, image }, i) => {
+                        return (
+                            <li key={id} className="section-shows-container-list-item">
+                                <div className="div-section-shows-container-list-item-thumbnail-container">
+                                    <ul className="div-section-shows-container-list-item-thumbnail-container-badges-list">
+                                        {badges.map((badge, i) => {
+                                            return (
+                                                <li key={i} className="div-section-shows-container-list-item-thumbnail-container-badges-list-item">
+                                                    <span className={badge === "4K" ? "four-k" : badge.toLowerCase()}>{badge}</span>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                    <div className="div-section-shows-container-list-item-thumbnail">
+                                        <Clapperboard size={32} />
+                                    </div>
+                                    <button>
+                                        <Play size={14} />
+                                    </button>
+                                </div>
+                                <div className="div-section-shows-container-list-item-info-container">
+                                    <h4>{title}</h4>
+                                    <ul className="section-shows-container-list-item-info-container-details-list">
+                                        {details.map((detail, i) => {
+                                            return (
+                                                <li key={i} className="section-shows-container-list-item-info-container-details-list-item">
+                                                    <span>{detail}</span>
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
+                            </li>
+                        );
+                    })}
                 </ul>
                 <button>
                     <ChevronRight size={16} />
