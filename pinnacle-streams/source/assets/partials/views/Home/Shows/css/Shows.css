@@ -1,0 +1,197 @@
+/* SECTION SHOWS CONTAINER */
+.section-shows-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 9.6rem 0;
+}
+
+/* HEADER SECTION SHOWS CONTAINER */
+.header-section-shows-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header-section-shows-container h2 {
+    font-size: 3.2rem;
+}
+
+.header-section-shows-container h2 span {
+    color: var(--brand-blue-core);
+}
+
+.header-section-shows-container a:link,
+.header-section-shows-container a:visited {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header-section-shows-container a:link span,
+.header-section-shows-container a:visited span {
+    font-size: 1.4rem;
+    color: var(--brand-blue-core);
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-section-shows-container a:hover span,
+.header-section-shows-container a:active span {
+    transform: translateX(-0.4rem);
+}
+
+.header-section-shows-container a:link svg,
+.header-section-shows-container a:visited svg {
+    stroke: var(--brand-blue-core);
+}
+
+/* SECTION SHOWS CONTAINER LIST CONTAINER */
+.div-section-shows-container-list-container {
+    position: relative;
+}
+
+.div-section-shows-container-list-container > button {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: var(--brand-navy-core);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-medium);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.div-section-shows-container-list-container > button:hover {
+    background-color: var(--brand-blue-core);
+}
+
+.div-section-shows-container-list-container > button:first-child {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.div-section-shows-container-list-container > button:last-child {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/* SECTION SHOWS CONTAINER LIST */
+.section-shows-container-list {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+/* SECTION SHOWS CONTAINER LIST ITEM */
+.section-shows-container-list-item {
+    width: 28rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* SECTION SHOWS CONTAINER LIST ITEM THUMBNAIL CONTAINER */
+.div-section-shows-container-list-item-thumbnail-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32rem;
+}
+
+.div-section-shows-container-list-item-thumbnail-container > span {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    background-color: var(--container-black);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
+    border-radius: 0.2rem;
+}
+
+.div-section-shows-container-list-item-thumbnail-container > button {
+    position: absolute;
+    bottom: 1.6rem;
+    left: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--brand-blue-core);
+    box-shadow: 0 0.4rem 1.2rem var(--brand-blue-core);
+    border: none;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.section-shows-container-list-item:hover .div-section-shows-container-list-item-thumbnail-container > button {
+    transform: scale(1);
+}
+
+.div-section-shows-container-list-item-thumbnail-container > button svg {
+    fill: var(--text-primary);
+}
+
+/* SECTION SHOWS CONTAINER LIST ITEM THUMBNAIL */
+.div-section-shows-container-list-item-thumbnail {
+    transition: transform 0.2s ease-in-out;
+}
+
+.section-shows-container-list-item:hover .div-section-shows-container-list-item-thumbnail {
+    transform: scale(1.1);
+}
+
+.div-section-shows-container-list-item-thumbnail svg {
+    stroke: var(--text-muted);
+}
+
+/* SECTION SHOWS CONTAINER LIST ITEM INFO CONTAINER */
+.div-section-shows-container-list-item-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.2rem;
+    background-color: var(--brand-navy-hover);
+}
+
+.div-section-shows-container-list-item-info-container > h4 {
+    font-size: 1.4rem;
+}
+
+/* SECTION SHOWS CONTAINER LIST ITEM INFO DETAILS LIST */
+.section-shows-container-list-item-info-container-details-list {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+/* SECTION SHOWS CONTAINER LIST ITEM INFO DETAILS LIST ITEM */
+.section-shows-container-list-item-info-container-details-list-item {
+    position: relative;
+}
+
+.section-shows-container-list-item-info-container-details-list-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.8rem;
+    width: 0.2rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--container-secondary);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-shows-container-list-item-info-container-details-list-item span {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
