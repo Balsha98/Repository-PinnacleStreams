@@ -64,6 +64,7 @@
     border-radius: 50%;
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
+    z-index: 2;
 }
 
 .div-section-live-container-list-container > button:hover {
@@ -82,13 +83,17 @@
 
 /* SECTION LIVE CONTAINER LIST */
 .section-live-container-list {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    overflow-x: hidden;
+    z-index: 1;
 }
 
 /* SECTION LIVE CONTAINER LIST ITEM */
 .section-live-container-list-item {
+    flex-shrink: 0;
     width: 36rem;
     border-radius: 1.2rem;
     overflow: hidden;
@@ -182,12 +187,22 @@
 }
 
 .header-section-live-container-list-item-info-container h4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     font-size: 1.4rem;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
 }
 
 .div-section-live-container-list-item-info-container p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     font-size: 1.2rem;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
     color: var(--text-muted);
+    overflow: hidden;
 }
 
 /* SECTION LIVE CONTAINER LIST ITEM INFO PROGRESS TRACK CONTAINER */
@@ -199,7 +214,6 @@
 }
 
 .div-section-live-container-list-item-info-progress-thumb {
-    width: 80%;
     height: 100%;
     background-color: var(--brand-blue-core);
     border-radius: 1.2rem;
