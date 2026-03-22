@@ -9,7 +9,7 @@ const SHOWS: object[] = [
         title: "Yellowstone",
         details: ["2018", "TV-MA", "Drama", "5 Seasons"],
         badges: ["HD"],
-        image: "",
+        image: "https://media.themoviedb.org/t/p/w600_and_h900_face/vOYfRZ0NpUK5hG2CB2dJFnYJlGe.jpg",
     },
     {
         id: 2,
@@ -137,20 +137,18 @@ const Shows = function () {
                 <ul className="section-shows-container-list">
                     {SHOWS.map(({ id, title, details, badges, image }, i) => {
                         return (
-                            <li key={id} className="section-shows-container-list-item">
+                            <li key={i} className="section-shows-container-list-item">
                                 <div className="div-section-shows-container-list-item-thumbnail-container">
                                     <ul className="div-section-shows-container-list-item-thumbnail-container-badges-list">
-                                        {badges.map((badge, i) => {
+                                        {badges.map((badge, j) => {
                                             return (
-                                                <li key={i} className="div-section-shows-container-list-item-thumbnail-container-badges-list-item">
+                                                <li key={j} className="div-section-shows-container-list-item-thumbnail-container-badges-list-item">
                                                     <span className={badge === "4K" ? "four-k" : badge.toLowerCase()}>{badge}</span>
                                                 </li>
                                             );
                                         })}
                                     </ul>
-                                    <div className="div-section-shows-container-list-item-thumbnail">
-                                        <Clapperboard size={32} />
-                                    </div>
+                                    <div className="div-section-shows-container-list-item-thumbnail">{image ? <img src={image} /> : <Clapperboard size={32} />}</div>
                                     <button>
                                         <Play size={14} />
                                     </button>
@@ -158,9 +156,9 @@ const Shows = function () {
                                 <div className="div-section-shows-container-list-item-info-container">
                                     <h4>{title}</h4>
                                     <ul className="section-shows-container-list-item-info-container-details-list">
-                                        {details.map((detail, i) => {
+                                        {details.map((detail, j) => {
                                             return (
-                                                <li key={i} className="section-shows-container-list-item-info-container-details-list-item">
+                                                <li key={j} className="section-shows-container-list-item-info-container-details-list-item">
                                                     <span>{detail}</span>
                                                 </li>
                                             );
