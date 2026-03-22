@@ -1,9 +1,11 @@
 // IMPORTED CORE MODULES
 import { ChevronLeft, ChevronRight, Clapperboard, Play } from "lucide-react";
+// IMPORTED CUSTOM TYPES
+import type Movie from "./types/Movie";
 // IMPORTED STYLESHEETS
 import "./css/Movies.css";
 
-const MOVIES: object[] = [
+const MOVIES: Movie[] = [
     {
         id: 1,
         title: "Top Gun: Maverick",
@@ -135,9 +137,9 @@ const Movies = function () {
                     <ChevronLeft size={16} />
                 </button>
                 <ul className="section-movies-container-list">
-                    {MOVIES.map(({ id, title, details, badges, image }, i) => {
+                    {MOVIES.map(({ id, title, details, badges, image }) => {
                         return (
-                            <li key={i} className="section-movies-container-list-item">
+                            <li key={id} className="section-movies-container-list-item">
                                 <div className="div-section-movies-container-list-item-thumbnail-container">
                                     <ul className="div-section-movies-container-list-item-thumbnail-container-badges-list">
                                         {badges.map((badge, j) => {

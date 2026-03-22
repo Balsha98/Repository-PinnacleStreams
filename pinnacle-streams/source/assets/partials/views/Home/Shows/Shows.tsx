@@ -1,9 +1,11 @@
 // IMPORTED CORE MODULES
 import { ChevronLeft, ChevronRight, Clapperboard, Play } from "lucide-react";
+// IMPORTED CUSTOM TYPES
+import type Show from "./types/Show";
 // IMPORTED STYLESHEETS
 import "./css/Shows.css";
 
-const SHOWS: object[] = [
+const SHOWS: Show[] = [
     {
         id: 1,
         title: "Yellowstone",
@@ -135,9 +137,9 @@ const Shows = function () {
                     <ChevronLeft size={16} />
                 </button>
                 <ul className="section-shows-container-list">
-                    {SHOWS.map(({ id, title, details, badges, image }, i) => {
+                    {SHOWS.map(({ id, title, details, badges, image }) => {
                         return (
-                            <li key={i} className="section-shows-container-list-item">
+                            <li key={id} className="section-shows-container-list-item">
                                 <div className="div-section-shows-container-list-item-thumbnail-container">
                                     <ul className="div-section-shows-container-list-item-thumbnail-container-badges-list">
                                         {badges.map((badge, j) => {

@@ -1,9 +1,11 @@
 // IMPORTED CORE MODULES
 import { ChevronLeft, ChevronRight, TvMinimal } from "lucide-react";
+// IMPORTED CUSTOM TYPES
+import type TV from "./types/TV";
 // IMPORTED STYLESHEETS
 import "./css/Live.css";
 
-const LIVE: object[] = [
+const LIVE: TV[] = [
     {
         id: 1,
         channel: "CBS",
