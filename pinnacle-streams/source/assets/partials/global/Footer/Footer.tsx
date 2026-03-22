@@ -1,4 +1,5 @@
 // IMPORTED CORE COMPONENTS
+import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Footer.css";
@@ -16,22 +17,22 @@ const Footer = function () {
                     </div>
                     <ul className="main-footer-info-overview-socials-list">
                         <li className="main-footer-info-overview-socials-list-item">
-                            <a href="#facebook">
+                            <a href="#">
                                 <Facebook size={18} />
                             </a>
                         </li>
                         <li className="main-footer-info-overview-socials-list-item">
-                            <a href="#instagram">
+                            <a href="#">
                                 <Instagram size={18} />
                             </a>
                         </li>
                         <li className="main-footer-info-overview-socials-list-item">
-                            <a href="#youtube">
+                            <a href="#">
                                 <Youtube size={18} />
                             </a>
                         </li>
                         <li className="main-footer-info-overview-socials-list-item">
-                            <a href="#twitter">
+                            <a href="#">
                                 <Twitter size={18} />
                             </a>
                         </li>
@@ -41,22 +42,22 @@ const Footer = function () {
                     <h4>Browse</h4>
                     <ul className="main-footer-links-list">
                         <li className="main-footer-links-list-item">
-                            <a href="#">Home</a>
+                            <Link to="/home">Home</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <a href="#">Shows</a>
+                            <Link to="/home">Shows</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <a href="#">Movies</a>
+                            <Link to="/home">Movies</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <a href="#">Pinnacle Originals</a>
+                            <Link to="/home">Pinnacle Originals</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <a href="#">Live TV</a>
+                            <Link to="/home">Live TV</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <a href="#">News</a>
+                            <Link to="/home">News</Link>
                         </li>
                     </ul>
                 </div>
@@ -64,13 +65,13 @@ const Footer = function () {
                     <h4>Account</h4>
                     <ul className="main-footer-links-list">
                         <li className="main-footer-links-list-item">
-                            <a href="#">Sign In</a>
+                            <Link to="/signin">Sign In</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <a href="#">Start Free Trial</a>
+                            <Link to="/signup">Start Free Trial</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <a href="#">Manage Plan</a>
+                            <Link to="/profile">Manage Plan</Link>
                         </li>
                         <li className="main-footer-links-list-item">
                             <a href="#">Gift Cards</a>
