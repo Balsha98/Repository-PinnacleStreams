@@ -43,12 +43,14 @@
     transform: translate(calc(100% - 1.2rem), -50%);
 }
 
-.header-auth-view-container button {
+.header-auth-view-container a:link,
+.header-auth-view-container a:visited {
     position: relative;
     width: 100%;
     padding: 1.2rem 1.6rem;
     font-size: 1.4rem;
     font-weight: 700;
+    text-align: center;
     color: var(--text-muted);
     background-color: transparent;
     border: unset;
@@ -58,6 +60,7 @@
     z-index: 2;
 }
 
-.header-auth-view-container button.active {
+.header-auth-view-container a:link.active,
+.header-auth-view-container a:visited.active {
     color: var(--text-primary);
 }
