@@ -50,7 +50,7 @@
     position: relative;
 }
 
-.div-section-live-container-list-container > button {
+.div-section-live-container-list-container>button {
     position: absolute;
     top: 50%;
     display: flex;
@@ -67,16 +67,16 @@
     z-index: 2;
 }
 
-.div-section-live-container-list-container > button:hover {
+.div-section-live-container-list-container>button:hover {
     background-color: var(--brand-blue-core);
 }
 
-.div-section-live-container-list-container > button:first-child {
+.div-section-live-container-list-container>button:first-child {
     left: 0;
     transform: translate(-50%, -50%);
 }
 
-.div-section-live-container-list-container > button:last-child {
+.div-section-live-container-list-container>button:last-child {
     right: 0;
     transform: translate(50%, -50%);
 }
@@ -96,6 +96,7 @@
     flex-shrink: 0;
     width: 36rem;
     border-radius: 1.2rem;
+    transition: transform 0.4s ease-in-out;
     overflow: hidden;
     cursor: pointer;
 }
