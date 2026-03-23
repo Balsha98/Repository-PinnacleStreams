@@ -14,8 +14,7 @@ const App = function () {
 			<Routes>
 				<Route path="/" element={<HomeView />} />
 				<Route path="/home" element={<HomeView />} />
-				{/* <Route path="/login" element={<LoginView />} />
-				<Route path="/signup" element={<SignupView />} /> */}
+				{/* <Route path="/auth" element={<LoginView />} /> */}
 				<Route path="*" element={<InvalidView />} />
 			</Routes>
 		</BrowserRouter>
