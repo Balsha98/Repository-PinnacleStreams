@@ -1,4 +1,4 @@
-// IMPORT CORE MODULES
+// IMPORTED CORE MODULES
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Check, Eye, EyeOff, Lock, Mail } from "lucide-react";
@@ -51,7 +51,7 @@ const Signin = function () {
                             </button>
                             <span>Remember me?</span>
                         </div>
-                        <Link to="/password-reset">Forgot password?</Link>
+                        <Link to="/password">Forgot password?</Link>
                     </div>
                     <button type="submit">Sign In</button>
                 </form>

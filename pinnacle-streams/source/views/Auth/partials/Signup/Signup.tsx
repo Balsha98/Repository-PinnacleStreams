@@ -1,4 +1,4 @@
-// IMPORT CORE MODULES
+// IMPORTED CORE MODULES
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Check, Eye, EyeOff, Lock, Mail, User } from "lucide-react";
