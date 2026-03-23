@@ -140,7 +140,7 @@
     transform: translateY(-50%);
 }
 
-.div-form-signin-view-input:focus-within svg {
+.div-form-signin-view-input:focus-within > svg {
     stroke: var(--brand-blue-core);
 }
 
