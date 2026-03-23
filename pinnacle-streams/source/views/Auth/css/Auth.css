@@ -3,6 +3,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
     width: 48rem;
     max-width: calc(100% - 3.2rem);
     transform: translate(-50%, -50%);
@@ -23,7 +26,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 0.6rem;
     width: 50%;
     height: calc(100% - 1.2rem);
     background-color: var(--brand-blue-core);
@@ -37,7 +40,7 @@
 }
 
 .signup.header-auth-view-container::after {
-    transform: translate(100%, -50%);
+    transform: translate(calc(100% - 1.2rem), -50%);
 }
 
 .header-auth-view-container button {
@@ -48,7 +51,7 @@
     font-weight: 700;
     color: var(--text-muted);
     background-color: transparent;
-    border: none;
+    border: unset;
     border-radius: 0.6rem;
     transition: color 0.4s ease-in-out;
     cursor: pointer;

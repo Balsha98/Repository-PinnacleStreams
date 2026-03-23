@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 // IMPORTED STYLESHEETS
 import "./css/Auth.css";
+// IMPORTED CUSTOM MODULES
+import SigninView from "./partials/Signin/Signin";
+import SignupView from "./partials/Signup/Signup";
 
 const Auth = function () {
 	const [selectedAuthView, setSelectedAuthView] = useState("signin");
@@ -22,6 +25,8 @@ const Auth = function () {
 					Sign Up
 				</button>
 			</header>
+			{selectedAuthView === "signin" && <SigninView />}
+			{selectedAuthView === "signup" && <SignupView />}
 		</div>
 	);
 };
