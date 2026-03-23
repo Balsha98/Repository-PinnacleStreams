@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: unset;
+}
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
@@ -46,6 +50,11 @@ body::after {
 
 ul {
     list-style: none;
+}
+
+input::placeholder {
+    font-weight: 500;
+    color: var(--text-muted);
 }
 
 a:link,
