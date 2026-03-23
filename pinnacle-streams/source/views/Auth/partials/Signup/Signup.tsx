@@ -71,7 +71,7 @@ const Signup = function () {
                     <button type="submit">Create Account</button>
                 </form>
                 <p>
-                    Already have an account? <Link to="/auth/signup">Sign in.</Link>
+                    Already have an account? <Link to="/auth/signin">Sign in.</Link>
                 </p>
             </div>
         </div>
