@@ -1,0 +1,219 @@
+/* SIGNIN VIEW CONTAINER */
+.div-signin-view-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+/* SIGNIN VIEW TOP CONTAINER */
+.div-signin-view-top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+/* HEADER SIGNIN VIEW TOP CONTAINER */
+.header-signin-view-top-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-signin-view-top-container h2 {
+    font-size: 2.4rem;
+}
+
+.header-signin-view-top-container p {
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+}
+
+/* SIGNIN VIEW TOP ACTIONS CONTAINER */
+.div-signin-view-top-actions-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.div-signin-view-top-actions-container button {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: var(--brand-navy-hover);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
+    border: unset;
+    border-radius: 0.6rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.div-signin-view-top-actions-container button:hover {
+    background-color: var(--alpha-blue-medium);
+    box-shadow: inset 0 0 0 0.12rem var(--brand-blue-core);
+    transform: translateY(-0.2rem);
+}
+
+/* SIGNIN VIEW BOTTOM CONTAINER */
+.div-signin-view-bottom-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-top: 3.2rem;
+}
+
+.div-signin-view-bottom-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--alpha-blue-dark);
+    transform: translateY(-50%);
+}
+
+.div-signin-view-bottom-container::after {
+    content: "Or Continue With Email";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background-color: var(--brand-navy-core);
+    transform: translate(-50%, -50%);
+}
+
+/* FORM SIGNIN VIEW CONTAINER */
+.form-signin-view-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/* FORM SIGNIN VIEW INPUT CONTAINER */
+.div-form-signin-view-input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.div-form-signin-view-input-container label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.div-form-signin-view-input {
+    position: relative;
+}
+
+.div-form-signin-view-input input {
+    width: 100%;
+    padding: 1.2rem 1.2rem 1.2rem 4.8rem;
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    background-color: var(--brand-navy-hover);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
+    border: unset;
+    border-radius: 0.8rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.div-form-signin-view-input input:focus {
+    box-shadow: inset 0 0 0 0.12rem var(--brand-blue-core);
+}
+
+.div-form-signin-view-input svg {
+    position: absolute;
+    top: 50%;
+    left: 1.6rem;
+    stroke: var(--text-muted);
+    transition: stroke 0.2s ease-in-out;
+    transform: translateY(-50%);
+}
+
+.div-form-signin-view-input input:focus+svg {
+    stroke: var(--brand-blue-core);
+}
+
+/* FORM SIGNIN VIEW ACTIONS CONTAINER */
+.div-form-signin-view-actions-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+}
+
+/* FORM SIGNIN VIEW ACTIONS CHECKBOX CONTAINER */
+.div-form-signin-view-actions-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.div-form-signin-view-actions-checkbox-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--brand-navy-hover);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
+    border: unset;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.div-form-signin-view-actions-checkbox-container button svg {
+    stroke: var(--brand-navy-hover)
+}
+
+.div-form-signin-view-actions-checkbox-container span {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+.div-form-signin-view-actions-container a:link,
+.div-form-signin-view-actions-container a:visited {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-blue-tint);
+}
+
+.form-signin-view-container>button {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: var(--brand-blue-core);
+    border: unset;
+    border-radius: 0.8rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.form-signin-view-container>button:hover {
+    background-color: var(--brand-blue-hover);
+    box-shadow: 0 0.4rem 1.2rem var(--alpha-blue-light);
+    transform: translateY(-0.2rem);
+}
+
+.div-signin-view-bottom-container>p {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.div-signin-view-bottom-container>p a:link,
+.div-signin-view-bottom-container>p a:visited {
+    font-weight: 700;
+    color: var(--text-blue-tint);
+}
