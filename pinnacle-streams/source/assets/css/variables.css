@@ -6,12 +6,12 @@
     /* BRAND BLUE */
     --brand-blue-core: #0064ff;
     --brand-blue-hover: #0050cc;
-    --brand-blue-light: #003a99;
+    --brand-blue-dark: #003a99;
 
     /* BRAND NAVY */
     --brand-navy-core: #060e2b;
     --brand-navy-hover: #0b1638;
-    --brand-navy-light: #04091e;
+    --brand-navy-dark: #04091e;
 
     /* ACCENTS */
     --accent-red-core: #dc1e1e;
