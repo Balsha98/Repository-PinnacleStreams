@@ -1,5 +1,5 @@
 // IMPORTED CORE MODULES
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import { ChevronLeft, ChevronRight, Clapperboard, Play } from "lucide-react";
 // IMPORTED CUSTOM TYPES
 import type Show from "./types/Show";
@@ -122,18 +122,24 @@ const SHOWS: Show[] = [
 ];
 
 const Shows = function () {
-    const [currentItemIndex, setCurrentItemIndex] = useState(0);
+    const [currentItemIndex, setCurrentItemIndex] = useState<number>(0);
 
-    const maxItemIndex = SHOWS.length - 1;
+    const maxItemIndex: number = SHOWS.length - 1;
 
-    const handleItemsIteration = function (e: any) {
+    const handleItemsIteration = function (e: MouseEvent<HTMLElement>): void {
         const { target } = e;
 
-        const button = target.closest("button");
+        const button = (target as HTMLElement).closest("button");
 
-        const direction = +button.dataset.direction;
+        // Guard clause.
+        if (!button) return;
 
-        setCurrentItemIndex((v) => (direction < 0 ? --v : ++v));
+        const direction = button.dataset.direction;
+
+        // Guard clause.
+        if (!direction) return;
+
+        setCurrentItemIndex((v) => (+direction < 0 ? --v : ++v));
     };
 
     return (

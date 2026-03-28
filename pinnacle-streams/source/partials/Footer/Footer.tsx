@@ -1,4 +1,5 @@
 // IMPORTED CORE COMPONENTS
+import type { ReactElement } from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 // IMPORTED STYLESHEETS
@@ -6,7 +7,7 @@ import "./css/Footer.css";
 // IMPORTED CUSTOM COMPONENTS
 import Logo from "../Logo/Logo";
 
-const Footer = function () {
+const Footer = function (): ReactElement {
     return (
         <footer className="main-footer-container">
             <div className="div-main-footer-content-container">

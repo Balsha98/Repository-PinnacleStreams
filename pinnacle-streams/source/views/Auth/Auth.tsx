@@ -1,5 +1,5 @@
 // IMPORTED CORE MODULES
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactElement } from "react";
 import { Link, useParams } from "react-router-dom";
 // IMPORTED STYLESHEETS
 import "./css/Auth.css";
@@ -7,8 +7,8 @@ import "./css/Auth.css";
 import SigninView from "./partials/Signin/Signin";
 import SignupView from "./partials/Signup/Signup";
 
-const Auth = function () {
-    const [selectedAuthView, setSelectedAuthView] = useState("signin");
+const Auth = function (): ReactElement {
+    const [selectedAuthView, setSelectedAuthView] = useState<string>("signin");
     const { id } = useParams();
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const Auth = function () {
         // Guard clause.
         if (!id) return;
 
-        setSelectedAuthView(id);
+        ((): void => setSelectedAuthView(id))();
     }, [id]);
 
     return (

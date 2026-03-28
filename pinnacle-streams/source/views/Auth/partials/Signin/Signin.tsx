@@ -1,17 +1,17 @@
 // IMPORTED CORE MODULES
-import { useState } from "react";
+import { useState, type ReactElement } from "react";
 import { Link } from "react-router-dom";
 import { Check, Eye, EyeOff, Lock, Mail } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Signin.css";
 
-const Signin = function () {
-    const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-    const [isRememberMeChecked, setIsRememberMeChecked] = useState(false);
+const Signin = function (): ReactElement {
+    const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false);
+    const [isRememberMeChecked, setIsRememberMeChecked] = useState<boolean>(false);
 
-    const handleTogglePasswordVisible = () => setIsPasswordVisible((v) => !v);
+    const handleTogglePasswordVisible = (): void => setIsPasswordVisible((v) => !v);
 
-    const handleToggleRememberMe = () => setIsRememberMeChecked((v) => !v);
+    const handleToggleRememberMe = (): void => setIsRememberMeChecked((v) => !v);
 
     return (
         <div className="div-signin-view-container">

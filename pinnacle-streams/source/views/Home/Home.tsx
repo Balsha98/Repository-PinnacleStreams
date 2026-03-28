@@ -11,24 +11,24 @@ import Plans from "./partials/Plans/Plans";
 import Footer from "../../partials/Footer/Footer";
 
 const Home = function () {
-	useEffect(() => {
-		document.title = "Pinnacle Streams | Home";
-	}, []);
+    useEffect(() => {
+        document.title = "Pinnacle Streams | Home";
+    }, []);
 
-	return (
-		<>
-			<Nav />
-			<div className="div-main-edge-container">
-				<Hero />
-				<Shows />
-				<Live />
-				<Movies />
-				<Features />
-				<Plans />
-				<Footer />
-			</div>
-		</>
-	);
+    return (
+        <>
+            <Nav isMainNav={true} />
+            <div className="div-main-edge-container">
+                <Hero />
+                <Shows />
+                <Live />
+                <Movies />
+                <Features />
+                <Plans />
+                <Footer />
+            </div>
+        </>
+    );
 };
 
 export default Home;

@@ -47,7 +47,9 @@
 }
 
 .section-plans-cards-list-item:hover {
-    box-shadow: 0 0.4rem 1.6rem var(--brand-navy-hover);
+    box-shadow:
+        0 0.4rem 1.6rem var(--brand-navy-hover),
+        inset 0 0 0 0.2rem var(--brand-blue-core);
     transform: translateY(-0.8rem);
 }
 
