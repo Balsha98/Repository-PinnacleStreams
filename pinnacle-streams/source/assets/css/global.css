@@ -13,12 +13,10 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
     background-color: var(--brand-navy-core);
-    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -50,6 +48,11 @@ body::after {
 
 ul {
     list-style: none;
+}
+
+input,
+select {
+    outline: none;
 }
 
 input::placeholder {
