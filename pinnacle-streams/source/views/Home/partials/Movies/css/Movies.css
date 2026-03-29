@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
-    padding: 9.6rem 0;
+    padding: 6.4rem 0 9.6rem;
 }
 
 /* HEADER SECTION MOVIES CONTAINER */
@@ -50,7 +50,7 @@
     position: relative;
 }
 
-.div-section-movies-container-list-container>button {
+.div-section-movies-container-list-container > button {
     position: absolute;
     top: 50%;
     display: flex;
@@ -67,16 +67,16 @@
     z-index: 2;
 }
 
-.div-section-movies-container-list-container>button:hover {
+.div-section-movies-container-list-container > button:hover {
     background-color: var(--brand-blue-core);
 }
 
-.div-section-movies-container-list-container>button:first-child {
+.div-section-movies-container-list-container > button:first-child {
     left: 0;
     transform: translate(-50%, -50%);
 }
 
-.div-section-movies-container-list-container>button:last-child {
+.div-section-movies-container-list-container > button:last-child {
     right: 0;
     transform: translate(50%, -50%);
 }
@@ -180,7 +180,7 @@
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.div-section-movies-container-list-item-thumbnail-container>button {
+.div-section-movies-container-list-item-thumbnail-container > button {
     position: absolute;
     bottom: 1.6rem;
     left: 0.8rem;
@@ -199,11 +199,11 @@
     z-index: 3;
 }
 
-.section-movies-container-list-item:hover .div-section-movies-container-list-item-thumbnail-container>button {
+.section-movies-container-list-item:hover .div-section-movies-container-list-item-thumbnail-container > button {
     transform: scale(1);
 }
 
-.div-section-movies-container-list-item-thumbnail-container>button svg {
+.div-section-movies-container-list-item-thumbnail-container > button svg {
     fill: var(--text-primary);
 }
 
@@ -216,7 +216,7 @@
     background-color: var(--brand-navy-hover);
 }
 
-.div-section-movies-container-list-item-info-container>h4 {
+.div-section-movies-container-list-item-info-container > h4 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     font-size: 1.4rem;
