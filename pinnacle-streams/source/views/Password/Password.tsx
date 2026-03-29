@@ -1,9 +1,9 @@
 // IMPORTED CORE MODULES
+import { useEffect, type ReactElement } from "react";
 import { Link } from "react-router-dom";
 import { Lock, Mail } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Password.css";
-import { useEffect, type ReactElement } from "react";
 
 const Password = function (): ReactElement {
     useEffect(() => {
