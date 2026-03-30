@@ -191,7 +191,13 @@
     box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
     border: unset;
     border-radius: 0.6rem;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
+}
+
+.div-shows-view-filters-actions-layout-container button:hover {
+    background-color: var(--alpha-blue-medium);
+    box-shadow: inset 0 0 0 0.12rem var(--brand-blue-hover);
 }
 
 .div-shows-view-filters-actions-layout-container button.active {
@@ -200,8 +206,10 @@
 
 .div-shows-view-filters-actions-layout-container button svg {
     stroke: var(--text-muted);
+    transition: stroke 0.2s ease-in-out;
 }
 
+.div-shows-view-filters-actions-layout-container button:hover svg,
 .div-shows-view-filters-actions-layout-container button.active svg {
     stroke: var(--text-primary);
 }
