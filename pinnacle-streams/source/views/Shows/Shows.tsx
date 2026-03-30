@@ -17,6 +17,7 @@ const SHOWS: Show[] = [
         details: ["2018", "TV-MA", "Drama", "5 Seasons"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/vOYfRZ0NpUK5hG2CB2dJFnYJlGe.jpg",
+        status: "Ended",
     },
     {
         id: 2,
@@ -24,6 +25,7 @@ const SHOWS: Show[] = [
         details: ["2022", "TV-MA", "Crime", "2 Seasons"],
         badges: ["HD", "New"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+        status: "Ongoing",
     },
     {
         id: 3,
@@ -31,6 +33,7 @@ const SHOWS: Show[] = [
         details: ["2022", "TV-14", "Sci-Fi", "3 Seasons"],
         badges: ["4K", "New"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
+        status: "Ongoing",
     },
     {
         id: 4,
@@ -38,6 +41,7 @@ const SHOWS: Show[] = [
         details: ["2017", "TV-MA", "Legal Drama", "6 Seasons"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/8qoOHOfbUbrCcHZnDVxGcwOWinV.jpg",
+        status: "Ended",
     },
     {
         id: 5,
@@ -45,6 +49,7 @@ const SHOWS: Show[] = [
         details: ["2022", "TV-MA", "Sci-Fi", "2 Seasons"],
         badges: ["4K"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/4UmNhZCEu8Vt3byMvNxNEPyf8EY.jpg",
+        status: "Ongoing",
     },
     {
         id: 6,
@@ -52,6 +57,7 @@ const SHOWS: Show[] = [
         details: ["2023", "TV-MA", "Action", "2 Seasons"],
         badges: ["HD", "New"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/ajaXSmdAlYYhnvx1EIsvpfN949y.jpg",
+        status: "Ongoing",
     },
     {
         id: 7,
@@ -59,6 +65,7 @@ const SHOWS: Show[] = [
         details: ["2021", "TV-MA", "Crime", "3 Seasons"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/6rWIip9MZELAA0SKii5WqsBDCYW.jpg",
+        status: "Ongoing",
     },
     {
         id: 8,
@@ -66,6 +73,7 @@ const SHOWS: Show[] = [
         details: ["2017", "TV-14", "Sci-Fi", "5 Seasons"],
         badges: ["4K"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/xwpOHgym48Ftz7fbJq5te5xoiwu.jpg",
+        status: "Ended",
     },
     {
         id: 9,
@@ -73,6 +81,7 @@ const SHOWS: Show[] = [
         details: ["2022", "TV-MA", "Drama", "2 Seasons"],
         badges: ["HD", "Original"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/zgZRJZvZn5cpsWAB0zMUdad3iZd.jpg",
+        status: "Ended",
     },
     {
         id: 10,
@@ -80,6 +89,7 @@ const SHOWS: Show[] = [
         details: ["2021", "TV-MA", "Western", "1 Season"],
         badges: ["HD", "Original"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/waLbm384SQDwLTCn6ttPqQS5kfV.jpg",
+        status: "Ended",
     },
     {
         id: 11,
@@ -87,6 +97,7 @@ const SHOWS: Show[] = [
         details: ["2022", "TV-MA", "Drama", "1 Season"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/9fdYX5uc3HZEuYotms3XJ72AbCr.jpg",
+        status: "Ended",
     },
     {
         id: 12,
@@ -94,6 +105,7 @@ const SHOWS: Show[] = [
         details: ["2020", "TV-14", "Sci-Fi", "3 Seasons"],
         badges: ["4K"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/nIlAKIrLKxOeoEnc0Urb65yNCp.jpg",
+        status: "Ended",
     },
     {
         id: 13,
@@ -101,6 +113,7 @@ const SHOWS: Show[] = [
         details: ["2019", "TV-MA", "Supernatural", "4 Seasons"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/auRAAVxlyT6YACql96UdtnpFHy3.jpg",
+        status: "Ended",
     },
     {
         id: 14,
@@ -108,6 +121,7 @@ const SHOWS: Show[] = [
         details: ["2017", "TV-14", "Action", "7 Seasons"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/6iSnec83UEMgLOXAtGYwaVNHLjR.jpg",
+        status: "Ended",
     },
     {
         id: 15,
@@ -115,6 +129,7 @@ const SHOWS: Show[] = [
         details: ["2021", "TV-14", "Comedy", "3 Seasons"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/tM4P2RNIIFzFJi7UngNVB80sRCp.jpg",
+        status: "Ended",
     },
     {
         id: 16,
@@ -122,6 +137,7 @@ const SHOWS: Show[] = [
         details: ["2023", "TV-14", "Musical", "1 Season"],
         badges: ["HD"],
         image: "https://media.themoviedb.org/t/p/w600_and_h900_face/dGu8u5F9Cjn9Ij2aMYtGmKHp5m1.jpg",
+        status: "Ended",
     },
 ];
 
@@ -136,7 +152,7 @@ const Movies = function (): ReactElement {
             <div className="div-main-edge-container">
                 <Header />
                 <Filters />
-                <Layout movies={SHOWS} />
+                <Layout shows={SHOWS} />
                 <Footer />
             </div>
         </>

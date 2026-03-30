@@ -4,6 +4,7 @@ type Show = {
     details: string[];
     badges: string[];
     image: string;
+    status: string;
 };
 
 export type { Show as default };

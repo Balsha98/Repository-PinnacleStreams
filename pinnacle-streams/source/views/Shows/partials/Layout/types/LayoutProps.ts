@@ -1,8 +1,8 @@
 // IMPORTED CUSTOM MODULES
-import type Movie from "../../../types/Show";
+import type Show from "../../../types/Show";
 
 interface LayoutProps {
-    movies: Movie[];
+    shows: Show[];
 }
 
 export type { LayoutProps as default };
