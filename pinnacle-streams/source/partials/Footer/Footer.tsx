@@ -14,7 +14,7 @@ const Footer = function (): ReactElement {
                 <div className="div-main-footer-info-overview-container">
                     <div className="div-main-footer-info-container">
                         <Logo />
-                        <p>The premium streaming home for hit shows, blockbuster movies, live sports, and exclusive Pinnacle Originals. Stream on demand or watch live - always on your terms.</p>
+                        <p>The premium streaming home for hit shows, blockbuster movies, live sports, and exclusives. Stream on demand or watch live - always on your terms.</p>
                     </div>
                     <ul className="main-footer-info-overview-socials-list">
                         <li className="main-footer-info-overview-socials-list-item">
@@ -50,9 +50,6 @@ const Footer = function (): ReactElement {
                         </li>
                         <li className="main-footer-links-list-item">
                             <Link to="/home">Movies</Link>
-                        </li>
-                        <li className="main-footer-links-list-item">
-                            <Link to="/home">Pinnacle Originals</Link>
                         </li>
                         <li className="main-footer-links-list-item">
                             <Link to="/home">Live TV</Link>
