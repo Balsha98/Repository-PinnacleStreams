@@ -46,16 +46,16 @@ const Footer = function (): ReactElement {
                             <Link to="/home">Home</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <Link to="/home">Shows</Link>
+                            <Link to="/shows">Shows</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <Link to="/home">Movies</Link>
+                            <Link to="/movie">Movies</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <Link to="/home">Live TV</Link>
+                            <Link to="/live">Live TV</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <Link to="/home">News</Link>
+                            <Link to="/news">News</Link>
                         </li>
                     </ul>
                 </div>
@@ -63,10 +63,10 @@ const Footer = function (): ReactElement {
                     <h4>Account</h4>
                     <ul className="main-footer-links-list">
                         <li className="main-footer-links-list-item">
-                            <Link to="/signin">Sign In</Link>
+                            <Link to="/auth/signin">Sign In</Link>
                         </li>
                         <li className="main-footer-links-list-item">
-                            <Link to="/signup">Start Free Trial</Link>
+                            <Link to="/auth/signup">Start Free Trial</Link>
                         </li>
                         <li className="main-footer-links-list-item">
                             <Link to="/profile">Manage Plan</Link>
