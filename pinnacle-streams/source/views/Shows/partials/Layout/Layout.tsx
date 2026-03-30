@@ -1,6 +1,6 @@
 // IMPORTED CORE MODULES
 import type { ReactElement } from "react";
-import { Clapperboard, Play, X } from "lucide-react";
+import { Clapperboard, Play } from "lucide-react";
 // IMPORTED CUSTOM MODULES
 import type LayoutProps from "./types/LayoutProps";
 // IMPORTED STYLESHEETS

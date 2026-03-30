@@ -1,6 +1,6 @@
 // IMPORTER CORE MODULES
 import type { ReactElement } from "react";
-import { ChevronDown, ChevronUp, LayoutGrid, List, Search } from "lucide-react";
+import { ChevronDown, LayoutGrid, List, Search } from "lucide-react";
 // IMPORTER STYLESHEETS
 import "./css/Filters.css";
 
