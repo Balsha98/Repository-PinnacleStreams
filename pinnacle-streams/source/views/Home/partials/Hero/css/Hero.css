@@ -1,11 +1,7 @@
 /* HOME VIEW HERO CONTAINER */
-.div-home-view-hero-container {
-    /* position: relative; */
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    padding: 8rem 0;
-}
+/* .div-home-view-hero-container {
+    position: relative;
+} */
 
 /* .div-home-view-hero-container::before {
     content: "";
@@ -21,6 +17,25 @@
     opacity: 0.12;
     z-index: -1;
 } */
+
+.home-view-hero-container-items-list {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.home-view-hero-container-items-list-item {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    padding: 8rem 0;
+}
+
+.hidden.home-view-hero-container-items-list-item {
+    display: none;
+}
 
 /* HEADER HOME VIEW HERO CONTAINER */
 .header-home-view-hero-container {
