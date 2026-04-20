@@ -62,12 +62,14 @@ const Hero = function () {
         const handleCarouselInterval = (): void => {
             const maxId: number = ITEMS.length;
 
-            // TODO: Check counter.
-            if (currentItemId === maxId) setCurrentItemId(0);
-            else setCurrentItemId((v) => ++v);
+            console.log(currentItemId);
+
+            if (currentItemId === maxId) return setCurrentItemId(1);
+
+            setCurrentItemId((v) => v + 1);
         };
 
-        const carouselInterval = setInterval(handleCarouselInterval, 5000);
+        const carouselInterval = setInterval(handleCarouselInterval, 1000);
 
         return () => clearInterval(carouselInterval);
     }, [currentItemId, setCurrentItemId]);
