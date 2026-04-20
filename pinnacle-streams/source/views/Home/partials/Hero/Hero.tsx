@@ -125,6 +125,17 @@ const Hero = function () {
                     );
                 })}
             </ul>
+            <div className="div-main-edge-container">
+                <ul className="home-view-hero-container-pagination-btns-list">
+                    {ITEMS.map(({ id }) => {
+                        return (
+                            <li key={id} className={`home-view-hero-container-pagination-btns-list-item${id === currentItemId ? " active" : ""}`}>
+                                <button />
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
         </div>
     );
 };

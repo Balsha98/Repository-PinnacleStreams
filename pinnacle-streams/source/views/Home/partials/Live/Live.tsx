@@ -186,7 +186,7 @@ const Live = function () {
                                             <span>Live</span>
                                         </div>
                                         <div className="div-section-live-container-list-item-thumbnail">
-                                            <TvMinimal size={32} />
+                                            <TvMinimal size={48} />
                                         </div>
                                     </div>
                                     <div className="div-section-live-container-list-item-info-container">

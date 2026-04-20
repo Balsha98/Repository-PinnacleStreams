@@ -21,7 +21,6 @@
 .home-view-hero-container-items-list {
     display: flex;
     align-items: center;
-    overflow-x: hidden;
 }
 
 .home-view-hero-container-items-list-item {
@@ -202,4 +201,33 @@
 .div-home-view-hero-content-actions-container a:visited span {
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+/* HOME VIEW HERO CONTAINER PAGINATION BTNS LIST */
+.home-view-hero-container-pagination-btns-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+/* HOME VIEW HERO CONTAINER PAGINATION BTNS LIST ITEM */
+.home-view-hero-container-pagination-btns-list-item {
+    display: flex;
+    align-items: center;
+    padding-top: 3.2rem;
+}
+
+.home-view-hero-container-pagination-btns-list-item button {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--brand-blue-hover);
+    border: unset;
+    border-radius: 12rem;
+}
+
+.home-view-hero-container-pagination-btns-list-item:hover button,
+.active.home-view-hero-container-pagination-btns-list-item button {
+    width: 3.2rem;
+    background-color: var(--brand-blue-core);
 }
