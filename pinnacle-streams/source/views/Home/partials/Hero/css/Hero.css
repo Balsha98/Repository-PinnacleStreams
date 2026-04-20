@@ -224,6 +224,8 @@
     background-color: var(--brand-blue-hover);
     border: unset;
     border-radius: 12rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .home-view-hero-container-pagination-btns-list-item:hover button,

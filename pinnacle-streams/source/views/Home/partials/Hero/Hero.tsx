@@ -1,11 +1,11 @@
 // IMPORTED CORE MODULES
+import { useEffect, useState, type MouseEvent } from "react";
 import { Link } from "react-router-dom";
 import { Info, Play, Star, Zap } from "lucide-react";
+// IMPORTED CUSTOM TYPES
+import type Item from "./types/Item";
 // IMPORTED STYLESHEETS
 import "./css/Hero.css";
-// IMPORTED CUSTOM MODULES
-import type Item from "./types/Item";
-import { useEffect, useState } from "react";
 
 const ITEMS: Item[] = [
     {
@@ -57,6 +57,22 @@ const ITEMS: Item[] = [
 
 const Hero = function () {
     const [currentItemId, setCurrentItemId] = useState<number>(1);
+
+    const handleCarouselPagination = function (e: MouseEvent<HTMLElement>): void {
+        const { target } = e;
+
+        const btn = (target as HTMLElement).closest("button");
+
+        // Guard clause.
+        if (!btn) return;
+
+        const id = btn.dataset.id;
+
+        // Guard clause.
+        if (!id) return;
+
+        setCurrentItemId(+id);
+    };
 
     useEffect(() => {
         const handleCarouselInterval = (): void => {
@@ -130,7 +146,7 @@ const Hero = function () {
                     {ITEMS.map(({ id }) => {
                         return (
                             <li key={id} className={`home-view-hero-container-pagination-btns-list-item${id === currentItemId ? " active" : ""}`}>
-                                <button />
+                                <button onClick={handleCarouselPagination} data-id={id} />
                             </li>
                         );
                     })}
