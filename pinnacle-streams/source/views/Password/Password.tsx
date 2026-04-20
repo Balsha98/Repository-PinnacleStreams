@@ -7,7 +7,7 @@ import "./css/Password.css";
 
 const Password = function (): ReactElement {
     useEffect(() => {
-        document.title = "Pinnacle Streams | Forgot Password";
+        document.title = "Paramount Streams | Forgot Password";
     }, []);
 
     return (

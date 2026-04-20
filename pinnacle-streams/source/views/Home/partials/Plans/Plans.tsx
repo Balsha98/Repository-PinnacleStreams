@@ -50,7 +50,7 @@ const Plans = function () {
                 </li>
                 <li className="section-plans-cards-list-item popular">
                     <header className="header-section-plans-cards-list-item">
-                        <span>Pinnacle+</span>
+                        <span>Paramount+</span>
                         <div className="div-header-section-plans-cards-list-item-info-container">
                             <h4>
                                 <sup>$</sup>12
@@ -80,7 +80,7 @@ const Plans = function () {
                             <span>Unlimited downloads</span>
                         </li>
                     </ul>
-                    <Link to="/plans/pinnacle-plus">Start Free Trial</Link>
+                    <Link to="/plans/paramount-plus">Start Free Trial</Link>
                 </li>
                 <li className="section-plans-cards-list-item">
                     <header className="header-section-plans-cards-list-item">
@@ -95,7 +95,7 @@ const Plans = function () {
                     <ul className="section-plans-cards-list-item-details-list">
                         <li className="section-plans-cards-list-item-details-list-item includes">
                             <Check size={16} />
-                            <span>Everything in Pinnacle+</span>
+                            <span>Everything in Paramount+</span>
                         </li>
                         <li className="section-plans-cards-list-item-details-list-item includes">
                             <Check size={16} />

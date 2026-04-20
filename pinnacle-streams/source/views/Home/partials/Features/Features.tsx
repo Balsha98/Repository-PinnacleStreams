@@ -8,7 +8,7 @@ const Features = function () {
         <section className="section-features-container">
             <header className="header-section-features-container">
                 <h2>
-                    Why <span>Pinnacle+</span>?
+                    Why <span>Paramount+</span>?
                 </h2>
                 <p>Everything you love to watch &mdash; live, on demand, and always in stunning quality.</p>
             </header>

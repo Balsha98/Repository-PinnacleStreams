@@ -8,7 +8,7 @@ const Logo = function (): ReactElement {
     return (
         <div className="div-main-logo-container">
             <Mountain size={24} />
-            <h2>Pinnacle</h2>
+            <h2>Paramount</h2>
         </div>
     );
 };

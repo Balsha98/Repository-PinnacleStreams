@@ -143,7 +143,7 @@ const SHOWS: Show[] = [
 
 const Movies = function (): ReactElement {
     useEffect(() => {
-        document.title = "Pinnacle Streams | TV Shows";
+        document.title = "Paramount Streams | TV Shows";
     }, []);
 
     return (

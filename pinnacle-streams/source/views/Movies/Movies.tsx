@@ -127,7 +127,7 @@ const MOVIES: Movie[] = [
 
 const Movies = function (): ReactElement {
     useEffect(() => {
-        document.title = "Pinnacle Streams | Movies";
+        document.title = "Paramount Streams | Movies";
     }, []);
 
     return (

@@ -12,7 +12,7 @@ import Footer from "../../partials/Footer/Footer";
 
 const Home = function () {
     useEffect(() => {
-        document.title = "Pinnacle Streams | Home";
+        document.title = "Paramount Streams | Home";
     }, []);
 
     return (
