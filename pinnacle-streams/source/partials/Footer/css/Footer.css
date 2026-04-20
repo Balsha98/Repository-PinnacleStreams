@@ -99,9 +99,6 @@
 /* MAIN FOOTER COPYRIGHT CONTAINER */
 .div-main-footer-copyright-container {
     position: relative;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
 }
 
 .div-main-footer-copyright-container::before {
@@ -114,7 +111,13 @@
     background-color: var(--alpha-blue-medium);
 }
 
-.div-main-footer-copyright-container > p {
+.div-main-footer-copyright-container .div-main-edge-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.div-main-footer-copyright-container .div-main-edge-container > p {
     font-size: 1.2rem;
     color: var(--text-muted);
 }

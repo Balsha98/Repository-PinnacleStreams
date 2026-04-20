@@ -18,15 +18,13 @@ const Home = function () {
     return (
         <>
             <Nav isMainNav={true} />
-            <div className="div-main-edge-container">
-                <Hero />
-                <Shows />
-                <Live />
-                <Movies />
-                <Features />
-                <Plans />
-                <Footer />
-            </div>
+            <Hero />
+            <Shows />
+            <Live />
+            <Movies />
+            <Features />
+            <Plans />
+            <Footer />
         </>
     );
 };

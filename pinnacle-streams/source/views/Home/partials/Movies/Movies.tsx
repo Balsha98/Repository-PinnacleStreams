@@ -143,64 +143,66 @@ const Movies = function () {
     };
 
     return (
-        <section className="section-movies-container">
-            <header className="header-section-movies-container">
-                <h2>
-                    Top <span>Movies</span>
-                </h2>
-                <a href="/movies">
-                    <span>Browse All</span>
-                    <ChevronRight size={16} />
-                </a>
-            </header>
-            <div className="div-section-movies-container-list-container">
-                {currentItemIndex * -1 < maxItemIndex && (
-                    <button onClick={handleItemsIteration} data-direction="-1">
-                        <ChevronLeft size={16} />
-                    </button>
-                )}
-                <ul className="section-movies-container-list">
-                    {MOVIES.map(({ id, title, details, badges, image }) => {
-                        return (
-                            <li key={id} className="section-movies-container-list-item" style={{ transform: `translateX(calc(${currentItemIndex} * (100% + 16px)))` }}>
-                                <div className="div-section-movies-container-list-item-thumbnail-container">
-                                    <ul className="div-section-movies-container-list-item-thumbnail-container-badges-list">
-                                        {badges.map((badge, j) => {
-                                            return (
-                                                <li key={j} className="div-section-movies-container-list-item-thumbnail-container-badges-list-item">
-                                                    <span className={badge === "4K" ? "four-k" : badge.toLowerCase()}>{badge}</span>
-                                                </li>
-                                            );
-                                        })}
-                                    </ul>
-                                    <div className="div-section-movies-container-list-item-thumbnail">{image ? <img src={image} /> : <Clapperboard size={32} />}</div>
-                                    <button>
-                                        <Play size={14} />
-                                    </button>
-                                </div>
-                                <div className="div-section-movies-container-list-item-info-container">
-                                    <h4>{title}</h4>
-                                    <ul className="section-movies-container-list-item-info-container-details-list">
-                                        {details.map((detail, j) => {
-                                            return (
-                                                <li key={j} className="section-movies-container-list-item-info-container-details-list-item">
-                                                    <span>{detail}</span>
-                                                </li>
-                                            );
-                                        })}
-                                    </ul>
-                                </div>
-                            </li>
-                        );
-                    })}
-                </ul>
-                {currentItemIndex !== 0 && (
-                    <button onClick={handleItemsIteration} data-direction="1">
+        <div className="div-main-edge-container">
+            <section className="section-movies-container">
+                <header className="header-section-movies-container">
+                    <h2>
+                        Top <span>Movies</span>
+                    </h2>
+                    <a href="/movies">
+                        <span>Browse All</span>
                         <ChevronRight size={16} />
-                    </button>
-                )}
-            </div>
-        </section>
+                    </a>
+                </header>
+                <div className="div-section-movies-container-list-container">
+                    {currentItemIndex * -1 < maxItemIndex && (
+                        <button onClick={handleItemsIteration} data-direction="-1">
+                            <ChevronLeft size={16} />
+                        </button>
+                    )}
+                    <ul className="section-movies-container-list">
+                        {MOVIES.map(({ id, title, details, badges, image }) => {
+                            return (
+                                <li key={id} className="section-movies-container-list-item" style={{ transform: `translateX(calc(${currentItemIndex} * (100% + 16px)))` }}>
+                                    <div className="div-section-movies-container-list-item-thumbnail-container">
+                                        <ul className="div-section-movies-container-list-item-thumbnail-container-badges-list">
+                                            {badges.map((badge, j) => {
+                                                return (
+                                                    <li key={j} className="div-section-movies-container-list-item-thumbnail-container-badges-list-item">
+                                                        <span className={badge === "4K" ? "four-k" : badge.toLowerCase()}>{badge}</span>
+                                                    </li>
+                                                );
+                                            })}
+                                        </ul>
+                                        <div className="div-section-movies-container-list-item-thumbnail">{image ? <img src={image} /> : <Clapperboard size={32} />}</div>
+                                        <button>
+                                            <Play size={14} />
+                                        </button>
+                                    </div>
+                                    <div className="div-section-movies-container-list-item-info-container">
+                                        <h4>{title}</h4>
+                                        <ul className="section-movies-container-list-item-info-container-details-list">
+                                            {details.map((detail, j) => {
+                                                return (
+                                                    <li key={j} className="section-movies-container-list-item-info-container-details-list-item">
+                                                        <span>{detail}</span>
+                                                    </li>
+                                                );
+                                            })}
+                                        </ul>
+                                    </div>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                    {currentItemIndex !== 0 && (
+                        <button onClick={handleItemsIteration} data-direction="1">
+                            <ChevronRight size={16} />
+                        </button>
+                    )}
+                </div>
+            </section>
+        </div>
     );
 };
 

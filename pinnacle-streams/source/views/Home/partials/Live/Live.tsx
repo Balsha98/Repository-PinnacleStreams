@@ -159,58 +159,60 @@ const Live = function () {
     };
 
     return (
-        <section className="section-live-container">
-            <header className="header-section-live-container">
-                <h2>
-                    <span>Live</span> TV
-                </h2>
-                <a href="/movies">
-                    <span>View Guide</span>
-                    <ChevronRight size={16} />
-                </a>
-            </header>
-            <div className="div-section-live-container-list-container">
-                {currentItemIndex * -1 < maxItemIndex && (
-                    <button onClick={handleItemsIteration} data-direction="-1">
-                        <ChevronLeft size={16} />
-                    </button>
-                )}
-                <ul className="section-live-container-list">
-                    {LIVE.map(({ channel, title, description, progress }, i) => {
-                        return (
-                            <li key={i} className="section-live-container-list-item" style={{ transform: `translateX(calc(${currentItemIndex} * (100% + 16px)))` }}>
-                                <div className="div-section-live-container-list-item-thumbnail-container">
-                                    <div className="div-section-live-container-list-item-thumbnail-indicator-container">
-                                        <span>&nbsp;</span>
-                                        <span>Live</span>
-                                    </div>
-                                    <div className="div-section-live-container-list-item-thumbnail">
-                                        <TvMinimal size={32} />
-                                    </div>
-                                </div>
-                                <div className="div-section-live-container-list-item-info-container">
-                                    <header className="header-section-live-container-list-item-info-container">
-                                        <span>{channel}</span>
-                                        <h4>{title}</h4>
-                                    </header>
-                                    <p>{description}</p>
-                                    <div className="div-section-live-container-list-item-info-progress-track-container">
-                                        <div className="div-section-live-container-list-item-info-progress-thumb" style={{ width: `${progress}%` }}>
-                                            &nbsp;
+        <div className="div-main-edge-container">
+            <section className="section-live-container">
+                <header className="header-section-live-container">
+                    <h2>
+                        <span>Live</span> TV
+                    </h2>
+                    <a href="/movies">
+                        <span>View Guide</span>
+                        <ChevronRight size={16} />
+                    </a>
+                </header>
+                <div className="div-section-live-container-list-container">
+                    {currentItemIndex * -1 < maxItemIndex && (
+                        <button onClick={handleItemsIteration} data-direction="-1">
+                            <ChevronLeft size={16} />
+                        </button>
+                    )}
+                    <ul className="section-live-container-list">
+                        {LIVE.map(({ channel, title, description, progress }, i) => {
+                            return (
+                                <li key={i} className="section-live-container-list-item" style={{ transform: `translateX(calc(${currentItemIndex} * (100% + 16px)))` }}>
+                                    <div className="div-section-live-container-list-item-thumbnail-container">
+                                        <div className="div-section-live-container-list-item-thumbnail-indicator-container">
+                                            <span>&nbsp;</span>
+                                            <span>Live</span>
+                                        </div>
+                                        <div className="div-section-live-container-list-item-thumbnail">
+                                            <TvMinimal size={32} />
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        );
-                    })}
-                </ul>
-                {currentItemIndex !== 0 && (
-                    <button onClick={handleItemsIteration} data-direction="1">
-                        <ChevronRight size={16} />
-                    </button>
-                )}
-            </div>
-        </section>
+                                    <div className="div-section-live-container-list-item-info-container">
+                                        <header className="header-section-live-container-list-item-info-container">
+                                            <span>{channel}</span>
+                                            <h4>{title}</h4>
+                                        </header>
+                                        <p>{description}</p>
+                                        <div className="div-section-live-container-list-item-info-progress-track-container">
+                                            <div className="div-section-live-container-list-item-info-progress-thumb" style={{ width: `${progress}%` }}>
+                                                &nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                    {currentItemIndex !== 0 && (
+                        <button onClick={handleItemsIteration} data-direction="1">
+                            <ChevronRight size={16} />
+                        </button>
+                    )}
+                </div>
+            </section>
+        </div>
     );
 };
 

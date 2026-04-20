@@ -15,7 +15,7 @@ const ITEMS: Item[] = [
         rating: 8.7,
         details: ["2018", "TV-MA", "Drama", "5 Seasons"],
         badges: ["New Season Now Streaming"],
-        image: "",
+        image: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/ynSOcgDLZfdLCZfRSYZGiTgYJVo.jpg",
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const ITEMS: Item[] = [
         rating: 8.1,
         details: ["2022", "TV-MA", "Crime", "2 Seasons"],
         badges: ["New Season Now Streaming"],
-        image: "",
+        image: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const ITEMS: Item[] = [
         rating: 7.9,
         details: ["2022", "TV-14", "Sci-Fi", "3 Seasons"],
         badges: ["New Season Now Streaming"],
-        image: "",
+        image: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const ITEMS: Item[] = [
         rating: 8.0,
         details: ["2017", "TV-MA", "Legal Drama", "6 Seasons"],
         badges: ["New Season Now Streaming"],
-        image: "",
+        image: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/nz6vpYyN1pEwBYeoAVIu2316d0z.jpg",
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ const ITEMS: Item[] = [
         rating: 6.9,
         details: ["2022", "TV-MA", "Sci-Fi", "2 Seasons"],
         badges: ["New Season Now Streaming"],
-        image: "",
+        image: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/zW0v2YT74C6tRafzqqBkfSqLAN0.jpg",
     },
 ];
 
@@ -69,7 +69,7 @@ const Hero = function () {
             setCurrentItemId((v) => v + 1);
         };
 
-        const carouselInterval = setInterval(handleCarouselInterval, 1000);
+        const carouselInterval = setInterval(handleCarouselInterval, 5000);
 
         return () => clearInterval(carouselInterval);
     }, [currentItemId, setCurrentItemId]);
@@ -77,46 +77,48 @@ const Hero = function () {
     return (
         <div className="div-home-view-hero-container">
             <ul className="home-view-hero-container-items-list">
-                {ITEMS.map(({ id, title, description, rating, details, badges }) => {
+                {ITEMS.map(({ id, title, description, rating, details, badges, image }) => {
                     const badge: string = badges[0];
                     const season: number = +details[details.length - 1].split(" ")[0];
 
                     return (
-                        <li key={id} className={`home-view-hero-container-items-list-item${id !== currentItemId ? " hidden" : ""}`}>
-                            <header className="header-home-view-hero-container">
-                                <div className="div-header-home-view-hero-icon-container">
-                                    <Zap size={16} />
-                                    <span>{badge}</span>
-                                </div>
-                                <div className="div-header-home-view-hero-info-container">
-                                    <h2>{title}</h2>
-                                    <span>Season {season}</span>
-                                </div>
-                            </header>
-                            <div className="div-home-view-hero-content-container">
-                                <div className="div-home-view-hero-content-info-container">
-                                    <ul className="home-view-hero-content-details-list">
-                                        <li className="home-view-hero-content-details-list-item">
-                                            <Star size={14} />
-                                            <span>{rating}</span>
-                                        </li>
-                                        {details.map((detail, i) => (
-                                            <li key={i} className="home-view-hero-content-details-list-item">
-                                                <span>{detail}</span>
+                        <li key={id} className={`home-view-hero-container-items-list-item${id !== currentItemId ? " hidden" : ""}`} style={{ backgroundImage: `url(${image})` }}>
+                            <div className="div-main-edge-container">
+                                <header className="header-home-view-hero-container">
+                                    <div className="div-header-home-view-hero-icon-container">
+                                        <Zap size={16} />
+                                        <span>{badge}</span>
+                                    </div>
+                                    <div className="div-header-home-view-hero-info-container">
+                                        <h2>{title}</h2>
+                                        <span>Season {season}</span>
+                                    </div>
+                                </header>
+                                <div className="div-home-view-hero-content-container">
+                                    <div className="div-home-view-hero-content-info-container">
+                                        <ul className="home-view-hero-content-details-list">
+                                            <li className="home-view-hero-content-details-list-item">
+                                                <Star size={14} />
+                                                <span>{rating}</span>
                                             </li>
-                                        ))}
-                                    </ul>
-                                    <p>{description}</p>
-                                </div>
-                                <div className="div-home-view-hero-content-actions-container">
-                                    <Link to="">
-                                        <Play size={16} />
-                                        <span>Watch Now</span>
-                                    </Link>
-                                    <Link to="">
-                                        <Info size={16} />
-                                        <span>More Info</span>
-                                    </Link>
+                                            {details.map((detail, i) => (
+                                                <li key={i} className="home-view-hero-content-details-list-item">
+                                                    <span>{detail}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <p>{description}</p>
+                                    </div>
+                                    <div className="div-home-view-hero-content-actions-container">
+                                        <Link to="">
+                                            <Play size={16} />
+                                            <span>Watch Now</span>
+                                        </Link>
+                                        <Link to="">
+                                            <Info size={16} />
+                                            <span>More Info</span>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </li>
