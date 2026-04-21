@@ -78,8 +78,6 @@ const Hero = function () {
         const handleCarouselInterval = (): void => {
             const maxId: number = ITEMS.length;
 
-            console.log(currentItemId);
-
             if (currentItemId === maxId) return setCurrentItemId(1);
 
             setCurrentItemId((v) => v + 1);
