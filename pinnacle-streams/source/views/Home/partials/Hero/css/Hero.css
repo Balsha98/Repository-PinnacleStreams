@@ -1,7 +1,8 @@
 /* HOME VIEW HERO CONTAINER */
-/* .div-home-view-hero-container {
+.div-home-view-hero-container {
     position: relative;
-} */
+    height: 100vh;
+}
 
 /* .div-home-view-hero-container::before {
     content: "";
@@ -21,15 +22,17 @@
 .home-view-hero-container-items-list {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .home-view-hero-container-items-list-item {
     flex-shrink: 0;
     position: relative;
     width: 100%;
+    height: 100%;
     padding: 8rem 0;
-    background-size: cover;
     background-color: var(--alpha-black-dark);
+    background-size: cover;
 }
 
 .hidden.home-view-hero-container-items-list-item {
@@ -42,14 +45,17 @@
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
     z-index: -1;
 }
 
 .home-view-hero-container-items-list-item .div-main-edge-container {
-    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.2rem;
+    height: 100%;
     z-index: 1;
 }
 
@@ -216,19 +222,27 @@
     font-weight: 500;
 }
 
+.div-home-view-hero-container > .div-main-edge-container {
+    position: absolute;
+    bottom: 4.8rem;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
 /* HOME VIEW HERO CONTAINER PAGINATION BTNS LIST */
 .home-view-hero-container-pagination-btns-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
+    margin-left: auto;
 }
 
 /* HOME VIEW HERO CONTAINER PAGINATION BTNS LIST ITEM */
 .home-view-hero-container-pagination-btns-list-item {
     display: flex;
     align-items: center;
-    padding-top: 2.4rem;
 }
 
 .home-view-hero-container-pagination-btns-list-item button {
