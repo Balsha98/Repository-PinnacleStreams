@@ -8,6 +8,7 @@ import Live from "./partials/Live/Live";
 import Movies from "./partials/Movies/Movies";
 import Features from "./partials/Features/Features";
 import Plans from "./partials/Plans/Plans";
+import Newsletter from "./partials/Newsletter/Newsletter";
 import Footer from "../../partials/Footer/Footer";
 
 const Home = function () {
@@ -24,6 +25,7 @@ const Home = function () {
             <Movies />
             <Features />
             <Plans />
+            <Newsletter />
             <Footer />
         </>
     );
