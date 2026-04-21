@@ -25,19 +25,32 @@
 
 .home-view-hero-container-items-list-item {
     flex-shrink: 0;
+    position: relative;
     width: 100%;
     padding: 8rem 0;
     background-size: cover;
+    background-color: var(--alpha-black-dark);
 }
 
 .hidden.home-view-hero-container-items-list-item {
     display: none;
 }
 
+.home-view-hero-container-items-list-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .home-view-hero-container-items-list-item .div-main-edge-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    z-index: 1;
 }
 
 /* HEADER HOME VIEW HERO CONTAINER */

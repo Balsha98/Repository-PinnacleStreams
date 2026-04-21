@@ -23,6 +23,9 @@
     --alpha-white-dark: rgba(255, 255, 255, 0.08);
     --alpha-white-medium: rgba(255, 255, 255, 0.16);
     --alpha-white-light: rgba(255, 255, 255, 0.24);
+    --alpha-black-dark: rgba(0, 0, 0, 0.24);
+    --alpha-black-medium: rgba(0, 0, 0, 0.16);
+    --alpha-black-light: rgba(0, 0, 0, 0.08);
     --alpha-blue-dark: rgba(107, 170, 255, 0.08);
     --alpha-blue-medium: rgba(107, 170, 255, 0.16);
     --alpha-blue-light: rgba(107, 170, 255, 0.24);

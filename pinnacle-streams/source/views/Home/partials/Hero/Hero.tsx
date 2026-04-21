@@ -98,7 +98,8 @@ const Hero = function () {
                     const season: number = +details[details.length - 1].split(" ")[0];
 
                     return (
-                        <li key={id} className={`home-view-hero-container-items-list-item${id !== currentItemId ? " hidden" : ""}`} style={{ backgroundImage: `url(${image})` }}>
+                        <li key={id} className={`home-view-hero-container-items-list-item${id !== currentItemId ? " hidden" : ""}`}>
+                            <img src={image} alt={`${title} Banner`} />
                             <div className="div-main-edge-container">
                                 <header className="header-home-view-hero-container">
                                     <div className="div-header-home-view-hero-icon-container">
