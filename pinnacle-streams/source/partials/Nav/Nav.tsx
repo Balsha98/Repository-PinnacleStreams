@@ -63,10 +63,14 @@ const Nav = function ({ isMainNav }: NavProps): ReactElement {
                 )}
                 <ul className="main-navbar-container-actions-list">
                     <li className="main-navbar-container-actions-list-item">
-                        <Link to="/auth/signin">Sign In</Link>
+                        <Link to="/auth/signin" rel="noopener noreferrer" target="_blank">
+                            Sign In
+                        </Link>
                     </li>
                     <li className="main-navbar-container-actions-list-item">
-                        <Link to="/auth/signup">Try Free</Link>
+                        <Link to="/auth/signup" rel="noopener noreferrer" target="_blank">
+                            Try Free
+                        </Link>
                     </li>
                 </ul>
             </div>

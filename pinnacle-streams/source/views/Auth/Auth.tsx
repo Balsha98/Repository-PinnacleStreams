@@ -12,7 +12,7 @@ const Auth = function (): ReactElement {
     const { id } = useParams();
 
     useEffect(() => {
-        document.title = "Paramount Streams | Auth";
+        document.title = "Paramount+ Streams | Auth";
     }, []);
 
     useEffect(() => {
