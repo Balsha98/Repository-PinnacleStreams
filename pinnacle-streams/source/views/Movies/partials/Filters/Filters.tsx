@@ -1,10 +1,12 @@
 // IMPORTER CORE MODULES
 import type { ReactElement } from "react";
 import { ChevronDown, LayoutGrid, List, Search } from "lucide-react";
+// IMPORTER CUSTOM TYPES
+import type FiltersProps from "./types/FiltersProps";
 // IMPORTER STYLESHEETS
 import "./css/Filters.css";
 
-const Filters = function (): ReactElement {
+const Filters = function ({ selectedLayout, onToggleSelectedLayout }: FiltersProps): ReactElement {
     return (
         <div className="div-movies-view-filters-container">
             <div className="div-movies-view-filters-search-container">
@@ -77,10 +79,10 @@ const Filters = function (): ReactElement {
                     <ChevronDown size={14} />
                 </div>
                 <div className="div-movies-view-filters-actions-layout-container">
-                    <button className="active" data-layout="grid">
+                    <button className={selectedLayout === "grid" ? "active" : ""} onClick={onToggleSelectedLayout} data-layout="grid">
                         <LayoutGrid size={14} />
                     </button>
-                    <button data-layout="list">
+                    <button className={selectedLayout === "list" ? "active" : ""} onClick={onToggleSelectedLayout} data-layout="list">
                         <List size={14} />
                     </button>
                 </div>

@@ -1,5 +1,5 @@
 // IMPORTED CORE MODULES
-import { useEffect, type ReactElement } from "react";
+import { useEffect, useState, type MouseEvent, type ReactElement } from "react";
 // IMPORTED STYLESHEETS
 import "./css/Movies.css";
 // IMPORTED CUSTOM MODULES
@@ -126,6 +126,24 @@ const MOVIES: Movie[] = [
 ];
 
 const Movies = function (): ReactElement {
+    const [selectedLayout, setSelectedLayout] = useState<string>("grid");
+
+    const handleSetSelectedLayout = function (e: MouseEvent<HTMLElement>): void {
+        const { target } = e;
+
+        const btn = (target as HTMLElement).closest("button");
+
+        // Guard clause.
+        if (!btn) return;
+
+        const layout = btn.dataset.layout;
+
+        // Guard clause.
+        if (!layout) return;
+
+        setSelectedLayout(layout);
+    };
+
     useEffect(() => {
         document.title = "Paramount Streams | Movies";
     }, []);
@@ -135,8 +153,8 @@ const Movies = function (): ReactElement {
             <Nav isMainNav={false} />
             <div className="div-main-edge-container">
                 <Header />
-                <Filters />
-                <Layout movies={MOVIES} />
+                <Filters selectedLayout={selectedLayout} onToggleSelectedLayout={handleSetSelectedLayout} />
+                <Layout movies={MOVIES} selectedLayout={selectedLayout} />
                 <Footer />
             </div>
         </>
