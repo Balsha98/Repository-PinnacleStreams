@@ -5,7 +5,7 @@ import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 // IMPORTED STYLESHEETS
 import "./css/Footer.css";
 // IMPORTED CUSTOM COMPONENTS
-import Logo from "../Logo/Logo";
+import LogoPartial from "../Logo/Logo";
 
 const Footer = function (): ReactElement {
     return (
@@ -14,7 +14,7 @@ const Footer = function (): ReactElement {
                 <div className="div-main-footer-content-container">
                     <div className="div-main-footer-info-overview-container">
                         <div className="div-main-footer-info-container">
-                            <Logo />
+                            <LogoPartial />
                             <p>The premium streaming home for hit shows, blockbuster movies, live sports, and exclusives. Stream on demand or watch live - always on your terms.</p>
                         </div>
                         <ul className="main-footer-info-overview-socials-list">

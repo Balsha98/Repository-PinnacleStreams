@@ -10,7 +10,9 @@ const Logo = function (): ReactElement {
         <div className="div-main-logo-container">
             <Link to="/home">
                 <Mountain size={24} />
-                <h2>Paramount+</h2>
+                <h2>
+                    Paramount<span>+</span>
+                </h2>
             </Link>
         </div>
     );

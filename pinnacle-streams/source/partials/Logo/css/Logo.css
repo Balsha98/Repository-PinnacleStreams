@@ -12,3 +12,9 @@
     font-family: var(--font-heading);
     letter-spacing: 2.4px;
 }
+
+.div-main-logo-container a:link h2 span,
+.div-main-logo-container a:visited h2 span {
+    font-style: italic;
+    color: var(--brand-blue-core);
+}

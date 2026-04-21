@@ -241,7 +241,6 @@
     cursor: pointer;
 }
 
-.home-view-hero-container-pagination-btns-list-item:hover button,
 .active.home-view-hero-container-pagination-btns-list-item button {
     width: 3.2rem;
     background-color: var(--brand-blue-core);
