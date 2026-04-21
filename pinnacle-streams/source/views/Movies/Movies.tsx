@@ -145,7 +145,7 @@ const Movies = function (): ReactElement {
     };
 
     useEffect(() => {
-        document.title = "Paramount Streams | Movies";
+        document.title = "Paramount+ Streams | Movies";
     }, []);
 
     return (

@@ -162,7 +162,7 @@ const Movies = function (): ReactElement {
     };
 
     useEffect(() => {
-        document.title = "Paramount Streams | TV Shows";
+        document.title = "Paramount+ Streams | TV Shows";
     }, []);
 
     return (
