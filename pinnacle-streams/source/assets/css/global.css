@@ -23,29 +23,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-body::before,
-body::after {
-    content: "";
-    position: fixed;
-    width: 48rem;
-    aspect-ratio: 1 / 1;
-    background-color: var(--brand-blue-core);
-    filter: blur(2.4rem);
-    border-radius: 50%;
-    opacity: 0.02;
-    z-index: -1;
-}
-
-body::before {
-    top: -16rem;
-    left: -16rem;
-}
-
-body::after {
-    bottom: -16rem;
-    right: -16rem;
-}
-
 ul {
     list-style: none;
 }
