@@ -70,7 +70,7 @@ const Footer = function (): ReactElement {
                                 <Link to="/auth/signup">Start Free Trial</Link>
                             </li>
                             <li className="main-footer-links-list-item">
-                                <Link to="/profile">Manage Plan</Link>
+                                <Link to="#">Manage Plan</Link>
                             </li>
                             <li className="main-footer-links-list-item">
                                 <a href="#">Gift Cards</a>
