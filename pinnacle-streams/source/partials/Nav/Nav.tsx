@@ -59,7 +59,7 @@ const Nav = function ({ isMainNav }: NavProps): ReactElement {
                                 </NavLink>
                             </li>
                             <li className="main-navbar-container-links-list-item">
-                                <NavLink to="/live" className={({ isActive }) => (isActive ? "active" : "")}>
+                                <NavLink to="/news" className={({ isActive }) => (isActive ? "active" : "")}>
                                     News
                                 </NavLink>
                             </li>
