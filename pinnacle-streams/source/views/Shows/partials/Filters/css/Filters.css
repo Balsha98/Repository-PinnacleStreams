@@ -1,7 +1,7 @@
 /* SHOWS VIEW FILTERS CONTAINER */
 .div-shows-view-filters-container {
     position: sticky;
-    top: 8rem;
+    top: 6.4rem;
     display: flex;
     align-items: center;
     gap: 2.4rem;
