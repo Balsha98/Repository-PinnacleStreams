@@ -165,7 +165,7 @@ const Live = function () {
                     <h2>
                         <span>Live</span> TV
                     </h2>
-                    <a href="/movies">
+                    <a href="/live">
                         <span>View Guide</span>
                         <ChevronRight size={16} />
                     </a>

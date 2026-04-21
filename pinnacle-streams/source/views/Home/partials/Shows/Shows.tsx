@@ -149,7 +149,7 @@ const Shows = function () {
                     <h2>
                         Top <span>Shows</span>
                     </h2>
-                    <a href="/movies">
+                    <a href="/shows">
                         <span>Browse All</span>
                         <ChevronRight size={16} />
                     </a>
