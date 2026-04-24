@@ -9,7 +9,7 @@
     background-color: var(--brand-navy-core);
     border-bottom: 0.2rem solid var(--alpha-blue-dark);
     overflow-x: scroll;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .div-movies-view-filters-container::-webkit-scrollbar {
