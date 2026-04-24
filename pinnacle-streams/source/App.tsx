@@ -13,6 +13,7 @@ import InvalidView from "./views/Invalid/Invalid";
 import ShowsView from "./views/Shows/Shows";
 import MoviesView from "./views/Movies/Movies";
 import LiveView from "./views/Live/Live";
+import NewsView from "./views/News/News";
 
 const App = function (): ReactElement {
     return (
@@ -26,6 +27,7 @@ const App = function (): ReactElement {
                 <Route path="/shows" element={<ShowsView />} />
                 <Route path="/movies" element={<MoviesView />} />
                 <Route path="/live" element={<LiveView />} />
+                <Route path="/news" element={<NewsView />} />
                 <Route path="*" element={<InvalidView />} />
             </Routes>
         </BrowserRouter>

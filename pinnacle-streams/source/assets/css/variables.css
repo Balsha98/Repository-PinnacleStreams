@@ -37,6 +37,14 @@
     --container-muted: #5c6e99;
     --container-blue-tint: #6baaff;
 
+    /* CATEGORY */
+    --category-news: #0064ff;
+    --category-originals: #0064ff;
+    --category-behind-the-scenes: #6b21a8;
+    --category-interviews: #f5c518;
+    --category-reviews: #00c896;
+    --category-culture: #be185d;
+
     /* BORDER */
     --border-black: #222;
     --border-primary: #ffffff;

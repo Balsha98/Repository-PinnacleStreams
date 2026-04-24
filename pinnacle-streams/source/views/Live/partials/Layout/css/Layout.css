@@ -96,9 +96,22 @@
 /* LIVE VIEW GRID LAYOUT LIST ITEM */
 .live-view-grid-layout-list-item {
     border-radius: 1.2rem;
+    animation: appear 0.4s ease-in-out both;
     transition: transform 0.4s ease-in-out;
     overflow: hidden;
     cursor: pointer;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(1.6rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* LIVE VIEW GRID LAYOUT LIST ITEM THUMBNAIL CONTAINER */
@@ -229,6 +242,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     font-size: 1.4rem;
+    font-family: var(--font-heading);
     -webkit-line-clamp: 1;
     line-clamp: 1;
     overflow: hidden;
