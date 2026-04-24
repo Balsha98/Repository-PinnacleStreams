@@ -1,0 +1,80 @@
+/* HEADER LIVE VIEW CONTAINER */
+.header-live-view-container {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12rem 0 3.2rem;
+}
+
+.header-live-view-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--alpha-blue-dark);
+}
+
+/* HEADER LIVE VIEW CONTENT CONTAINER */
+.div-header-live-view-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* HEADER LIVE VIEW BREADCRUMBS CONTAINER */
+.div-header-live-view-breadcrumbs-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.div-header-live-view-breadcrumbs-container a:link,
+.div-header-live-view-breadcrumbs-container a:visited,
+.div-header-live-view-breadcrumbs-container span {
+    font-size: 1.4rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease-in-out;
+}
+
+.div-header-live-view-breadcrumbs-container a:hover,
+.div-header-live-view-breadcrumbs-container a:active {
+    color: var(--text-primary);
+}
+
+.div-header-live-view-breadcrumbs-container svg {
+    stroke: var(--text-muted);
+}
+
+.div-header-live-view-content-container > h2 {
+    font-size: 4rem;
+}
+
+.div-header-live-view-content-container > h2 span {
+    color: var(--brand-blue-core);
+}
+
+.div-header-live-view-content-container > p {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+}
+
+/* HEADER LIVE TOTAL COUNT CONTAINER */
+.div-header-live-view-total-count-container {
+    padding: 0.8rem 1.6rem;
+    background-color: var(--brand-navy-hover);
+    box-shadow: inset 0 0 0 0.12rem var(--alpha-blue-dark);
+    border-radius: 3.2rem;
+}
+
+.div-header-live-view-total-count-container p {
+    font-size: 1.4rem;
+    color: var(--text-muted);
+}
+
+.div-header-live-view-total-count-container p span {
+    font-weight: 700;
+    color: var(--brand-blue-core);
+}

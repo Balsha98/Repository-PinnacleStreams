@@ -12,6 +12,7 @@ import PasswordView from "./views/Password/Password";
 import InvalidView from "./views/Invalid/Invalid";
 import ShowsView from "./views/Shows/Shows";
 import MoviesView from "./views/Movies/Movies";
+import LiveView from "./views/Live/Live";
 
 const App = function (): ReactElement {
     return (
@@ -22,10 +23,9 @@ const App = function (): ReactElement {
                 <Route path="/auth" element={<AuthView />} />
                 <Route path="/auth/:id" element={<AuthView />} />
                 <Route path="/password" element={<PasswordView />} />
-                {/* <Route path="/shows" element={} />
-                <Route path="/live" element={} /> */}
                 <Route path="/shows" element={<ShowsView />} />
                 <Route path="/movies" element={<MoviesView />} />
+                <Route path="/live" element={<LiveView />} />
                 <Route path="*" element={<InvalidView />} />
             </Routes>
         </BrowserRouter>
