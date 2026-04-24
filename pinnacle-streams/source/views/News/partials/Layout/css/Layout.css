@@ -100,8 +100,21 @@
     height: 100%;
     background-color: var(--brand-navy-hover);
     border-radius: 1.2rem;
+    animation: appear 0.4s ease-in-out both;
     transition: transform 0.4s ease-in-out;
     cursor: pointer;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(1.6rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* NEWS VIEW GRID LAYOUT LIST ITEM THUMBNAIL CONTAINER */
