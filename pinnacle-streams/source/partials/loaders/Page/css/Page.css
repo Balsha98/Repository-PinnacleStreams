@@ -1,0 +1,85 @@
+/* ALERT MODAL CONTAINER */
+.div-page-loader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--brand-navy-hover);
+    transition: all 0.8s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+
+.active {
+    z-index: 9999;
+    opacity: 1;
+}
+
+/* ALERT MODAL */
+.div-page-loader-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ICON CONTAINER */
+.div-page-loader-modal-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto 2.4rem;
+    background-color: var(--brand-blue-core);
+    border-radius: 50%;
+}
+
+.div-page-loader-modal-icon-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--brand-blue-core);
+    border-radius: 50%;
+    animation: loading infinite ease-in-out normal 1.2s;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@keyframes loading {
+    from {
+        width: 12rem;
+        height: 12rem;
+        opacity: 1;
+    }
+
+    to {
+        width: 18rem;
+        height: 18rem;
+        opacity: 0;
+    }
+}
+
+.div-page-loader-modal-icon-container svg {
+    position: relative;
+    margin-bottom: 0.8rem;
+    transform: rotate(30deg);
+    animation: rotating infinite ease-in-out alternate-reverse 1.2s;
+    z-index: 2;
+    opacity: 1;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(30deg);
+    }
+
+    to {
+        transform: rotate(-30deg);
+    }
+}
