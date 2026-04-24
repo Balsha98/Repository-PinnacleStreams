@@ -26,7 +26,7 @@ const Layout = function ({ movies, selectedLayout }: LayoutProps): ReactElement 
                     Showing <span>16</span> results.
                 </p>
             </header>
-            <div className="div-movies-views-layout-list-container">
+            <div className="div-movies-view-layout-list-container">
                 {selectedLayout === "grid" ? (
                     <ul className="movies-view-grid-layout-list">
                         {movies.map(({ id, title, details, badges, image }, i) => {

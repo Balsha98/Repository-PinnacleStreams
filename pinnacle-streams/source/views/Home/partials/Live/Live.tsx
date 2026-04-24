@@ -1,6 +1,6 @@
 // IMPORTED CORE MODULES
 import { useState, type MouseEvent } from "react";
-import { ChevronLeft, ChevronRight, TvMinimal } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, TvMinimal } from "lucide-react";
 // IMPORTED CUSTOM TYPES
 import type TV from "./types/TV";
 // IMPORTED STYLESHEETS
@@ -188,6 +188,9 @@ const Live = function () {
                                         <div className="div-section-live-container-list-item-thumbnail">
                                             <TvMinimal size={48} />
                                         </div>
+                                        <button>
+                                            <Play size={14} />
+                                        </button>
                                     </div>
                                     <div className="div-section-live-container-list-item-info-container">
                                         <header className="header-section-live-container-list-item-info-container">

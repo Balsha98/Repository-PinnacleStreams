@@ -26,7 +26,7 @@ const Layout = function ({ shows, selectedLayout }: LayoutProps): ReactElement {
                     Showing <span>16</span> results.
                 </p>
             </header>
-            <div className="div-shows-views-layout-list-container">
+            <div className="div-shows-view-layout-list-container">
                 {selectedLayout === "grid" ? (
                     <ul className="shows-view-grid-layout-list">
                         {shows.map(({ id, title, details, badges, image, status }, i) => {

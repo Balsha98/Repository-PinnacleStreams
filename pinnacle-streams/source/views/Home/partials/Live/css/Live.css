@@ -175,6 +175,33 @@
     stroke: var(--text-muted);
 }
 
+.div-section-live-container-list-item-thumbnail-container > button {
+    position: absolute;
+    bottom: 2.4rem;
+    right: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    background-color: var(--brand-blue-core);
+    box-shadow: 0 0.4rem 1.2rem var(--brand-blue-core);
+    border: unset;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.section-live-container-list-item:hover .div-section-live-container-list-item-thumbnail-container > button {
+    transform: scale(1);
+}
+
+.div-section-live-container-list-item-thumbnail-container > button svg {
+    fill: var(--text-primary);
+}
+
 /* SECTION LIVE CONTAINER LIST ITEM INFO CONTAINER */
 .div-section-live-container-list-item-info-container {
     display: flex;
