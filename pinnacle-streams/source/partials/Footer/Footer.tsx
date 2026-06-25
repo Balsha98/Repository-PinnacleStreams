@@ -15,7 +15,10 @@ const Footer = function (): ReactElement {
                     <div className="div-main-footer-info-overview-container">
                         <div className="div-main-footer-info-container">
                             <LogoPartial />
-                            <p>The premium streaming home for hit shows, blockbuster movies, live sports, and exclusives. Stream on demand or watch live - always on your terms.</p>
+                            <p>
+                                The premium streaming home for hit shows, blockbuster movies, live sports, and exclusives. Stream on demand or watch live -
+                                always on your terms.
+                            </p>
                         </div>
                         <ul className="main-footer-info-overview-socials-list">
                             <li className="main-footer-info-overview-socials-list-item">
@@ -104,7 +107,7 @@ const Footer = function (): ReactElement {
             </div>
             <div className="div-main-footer-copyright-container">
                 <div className="div-main-edge-container">
-                    <p>&copy; {new Date().getFullYear()} Paramount+ Streams, Inc. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Pinnacle+ Streams, Inc. All rights reserved.</p>
                     <ul className="main-footer-copyright-links-list">
                         <li className="main-footer-copyright-links-list-item">
                             <a href="#">Privacy Policy</a>

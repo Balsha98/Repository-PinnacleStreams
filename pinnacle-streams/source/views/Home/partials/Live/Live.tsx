@@ -57,7 +57,7 @@ const LIVE: TV[] = [
     },
     {
         id: 7,
-        channel: "Paramount Network",
+        channel: "Pinnacle Network",
         title: "Yellowstone Marathon",
         description: "Binge the complete Season 4 before the finale",
         progress: 44,
@@ -105,7 +105,7 @@ const LIVE: TV[] = [
     },
     {
         id: 13,
-        channel: "Paramount Network",
+        channel: "Pinnacle Network",
         title: "Bar Rescue",
         description: "Jon Taffer steps in to save a struggling bar from closing",
         progress: 67,
@@ -179,7 +179,11 @@ const Live = function () {
                     <ul className="section-live-container-list">
                         {LIVE.map(({ channel, title, description, progress }, i) => {
                             return (
-                                <li key={i} className="section-live-container-list-item" style={{ transform: `translateX(calc(${currentItemIndex} * (100% + 16px)))` }}>
+                                <li
+                                    key={i}
+                                    className="section-live-container-list-item"
+                                    style={{ transform: `translateX(calc(${currentItemIndex} * (100% + 16px)))` }}
+                                >
                                     <div className="div-section-live-container-list-item-thumbnail-container">
                                         <div className="div-section-live-container-list-item-thumbnail-indicator-container">
                                             <span>&nbsp;</span>

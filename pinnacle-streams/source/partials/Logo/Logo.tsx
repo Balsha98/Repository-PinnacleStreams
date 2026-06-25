@@ -11,7 +11,7 @@ const Logo = function (): ReactElement {
             <Link to="/home">
                 <Mountain size={24} />
                 <h2>
-                    Paramount<span>+</span>
+                    Pinnacle<span>+</span>
                 </h2>
             </Link>
         </div>

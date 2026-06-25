@@ -61,7 +61,7 @@ const LIVE: TV[] = [
     },
     {
         id: 7,
-        channel: "Paramount Network",
+        channel: "Pinnacle Network",
         title: "Yellowstone Marathon",
         description: "Binge the complete Season 4 before the finale",
         progress: 44,
@@ -109,7 +109,7 @@ const LIVE: TV[] = [
     },
     {
         id: 13,
-        channel: "Paramount Network",
+        channel: "Pinnacle Network",
         title: "Bar Rescue",
         description: "Jon Taffer steps in to save a struggling bar from closing",
         progress: 67,
@@ -143,7 +143,7 @@ const LIVE: TV[] = [
 
 const Live = function (): ReactElement {
     useEffect(() => {
-        document.title = "Paramount+ Streams | Live TV";
+        document.title = "Pinnacle+ Streams | Live TV";
     }, []);
 
     return (

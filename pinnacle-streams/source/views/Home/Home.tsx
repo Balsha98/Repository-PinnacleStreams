@@ -16,7 +16,7 @@ const Home = function () {
     const [isViewLoading, setIsViewLoading] = useState(true);
 
     useEffect(() => {
-        document.title = "Paramount+ Streams | Home";
+        document.title = "Pinnacle+ Streams | Home";
 
         const loadingTimer = setTimeout(() => setIsViewLoading(false), 2400);
 
